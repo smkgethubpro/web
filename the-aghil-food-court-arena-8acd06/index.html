@@ -1,0 +1,507 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="The Aghil Food Court & Arena - Authentic Afghan restaurant in Quetta, Pakistan. Enjoy halal cuisine, warm hospitality, family-friendly dining.">
+<meta name="theme-color" content="#FFFFFF">
+<title>The Aghil Food Court & Arena | Authentic Afghan Cuisine in Quetta</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+<style>
+*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+:root {
+  --white: #FFFFFF; --off-white: #FAFAFA; --warm-gray: #F5F5F5;
+  --sandstone: #EFEBE9; --saffron: #E8A33D; --saffron-dark: #D4922B;
+  --text: #3D3D3D; --text-light: #5C5C5C; --border: #E8E0DC;
+  --font: 'Inter', 'Space Grotesk', system-ui, sans-serif;
+  --shadow-sm: 0 2px 8px rgba(0,0,0,0.06);
+  --shadow-md: 0 4px 20px rgba(0,0,0,0.08);
+  --shadow-lg: 0 8px 30px rgba(0,0,0,0.12);
+  --radius: 12px; --transition: 0.3s ease;
+}
+html { scroll-behavior: smooth; font-size: 16px; }
+body { font-family: var(--font); background: var(--white); color: var(--text); line-height: 1.6; overflow-x: hidden; }
+img { max-width: 100%; height: auto; display: block; }
+a { color: inherit; text-decoration: none; }
+button { font-family: inherit; cursor: pointer; border: none; }
+.container { max-width: 1200px; margin: 0 auto; padding: 0 24px; }
+section { padding: 80px 0; }
+.section-label { display: inline-block; font-size: 0.8rem; font-weight: 600; text-transform: uppercase; letter-spacing: 0.12em; color: var(--saffron); margin-bottom: 12px; }
+.section-title { font-size: clamp(1.75rem, 4vw, 2.5rem); font-weight: 700; line-height: 1.2; margin-bottom: 16px; color: var(--text); }
+.section-desc { font-size: 1.05rem; color: var(--text-light); max-width: 600px; line-height: 1.7; }
+
+/* Navigation */
+.nav { position: fixed; top: 0; left: 0; right: 0; z-index: 1000; background: rgba(255,255,255,0.95); backdrop-filter: blur(12px); border-bottom: 1px solid var(--border); transition: var(--transition); }
+.nav-inner { max-width: 1200px; margin: 0 auto; padding: 0 24px; display: flex; align-items: center; justify-content: space-between; height: 72px; }
+.nav-logo { font-size: 1.1rem; font-weight: 700; color: var(--text); }
+.nav-logo span { color: var(--saffron); }
+.nav-links { display: flex; gap: 32px; list-style: none; }
+.nav-links a { font-size: 0.9rem; font-weight: 500; color: var(--text-light); transition: var(--transition); position: relative; }
+.nav-links a:hover { color: var(--saffron); }
+.nav-links a::after { content: ''; position: absolute; bottom: -4px; left: 0; width: 0; height: 2px; background: var(--saffron); transition: var(--transition); }
+.nav-links a:hover::after { width: 100%; }
+.nav-toggle { display: none; background: none; font-size: 1.5rem; color: var(--text); }
+
+/* Hero */
+.hero { min-height: 100vh; display: flex; align-items: center; position: relative; background: linear-gradient(135deg, var(--warm-gray) 0%, var(--sandstone) 100%); overflow: hidden; }
+.hero-bg { position: absolute; inset: 0; background: url('https://picsum.photos/seed/aghil-hero/1600/900.jpg') center/cover no-repeat; opacity: 0.3; }
+.hero-content { position: relative; z-index: 1; max-width: 700px; }
+.hero-badge { display: inline-flex; align-items: center; gap: 8px; background: var(--white); border: 1px solid var(--border); padding: 8px 16px; border-radius: 50px; font-size: 0.85rem; font-weight: 500; color: var(--text-light); margin-bottom: 24px; }
+.hero-badge i { color: var(--saffron); }
+.hero h1 { font-size: clamp(2.5rem, 6vw, 4rem); font-weight: 800; line-height: 1.1; margin-bottom: 20px; color: var(--text); }
+.hero h1 span { color: var(--saffron); }
+.hero p { font-size: 1.15rem; color: var(--text-light); margin-bottom: 36px; max-width: 500px; line-height: 1.7; }
+.hero-btns { display: flex; gap: 16px; flex-wrap: wrap; }
+.btn { display: inline-flex; align-items: center; gap: 10px; padding: 14px 32px; border-radius: 50px; font-weight: 600; font-size: 0.95rem; transition: var(--transition); }
+.btn-primary { background: var(--saffron); color: var(--white); box-shadow: 0 4px 16px rgba(232,163,61,0.3); }
+.btn-primary:hover { background: var(--saffron-dark); transform: translateY(-2px); box-shadow: 0 6px 24px rgba(232,163,61,0.4); }
+.btn-outline { background: var(--white); color: var(--text); border: 2px solid var(--border); }
+.btn-outline:hover { border-color: var(--saffron); color: var(--saffron); transform: translateY(-2px); box-shadow: var(--shadow-md); }
+
+/* About */
+.about { background: var(--white); }
+.about-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 60px; align-items: center; }
+.about-image { border-radius: var(--radius); overflow: hidden; box-shadow: var(--shadow-md); }
+.about-image img { width: 100%; height: 400px; object-fit: cover; }
+.about-text h3 { font-size: 1.6rem; font-weight: 700; margin-bottom: 16px; }
+.about-text p { color: var(--text-light); margin-bottom: 16px; line-height: 1.8; }
+.highlights { display: grid; grid-template-columns: repeat(3, 1fr); gap: 24px; margin-top: 40px; }
+.highlight { text-align: center; padding: 28px 20px; background: var(--warm-gray); border-radius: var(--radius); transition: var(--transition); }
+.highlight:hover { transform: translateY(-4px); box-shadow: var(--shadow-md); }
+.highlight i { font-size: 2rem; color: var(--saffron); margin-bottom: 12px; }
+.highlight h4 { font-size: 0.95rem; font-weight: 600; margin-bottom: 6px; }
+.highlight p { font-size: 0.85rem; color: var(--text-light); }
+
+/* Menu */
+.menu { background: var(--warm-gray); }
+.menu-tabs { display: flex; gap: 8px; margin-bottom: 40px; flex-wrap: wrap; }
+.menu-tab { padding: 10px 24px; border-radius: 50px; background: var(--white); border: 1px solid var(--border); font-weight: 500; font-size: 0.9rem; color: var(--text-light); transition: var(--transition); }
+.menu-tab.active, .menu-tab:hover { background: var(--saffron); color: var(--white); border-color: var(--saffron); }
+.menu-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(280px, 1fr)); gap: 24px; }
+.menu-item { background: var(--white); border-radius: var(--radius); overflow: hidden; box-shadow: var(--shadow-sm); transition: var(--transition); }
+.menu-item:hover { transform: translateY(-4px); box-shadow: var(--shadow-lg); }
+.menu-item-img { height: 200px; background: var(--sandstone); display: flex; align-items: center; justify-content: center; overflow: hidden; }
+.menu-item-img img { width: 100%; height: 100%; object-fit: cover; transition: transform 0.5s ease; }
+.menu-item:hover .menu-item-img img { transform: scale(1.05); }
+.menu-item-body { padding: 20px; }
+.menu-item-header { display: flex; justify-content: space-between; align-items: flex-start; margin-bottom: 8px; }
+.menu-item-header h4 { font-size: 1.05rem; font-weight: 600; }
+.menu-item-price { font-weight: 700; color: var(--saffron); font-size: 1rem; white-space: nowrap; }
+.menu-item-desc { font-size: 0.85rem; color: var(--text-light); line-height: 1.6; }
+.menu-item-tag { display: inline-block; font-size: 0.7rem; font-weight: 600; padding: 3px 10px; border-radius: 50px; background: var(--sandstone); color: var(--text-light); margin-top: 10px; }
+
+/* Gallery */
+.gallery-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 16px; }
+.gallery-item { position: relative; border-radius: var(--radius); overflow: hidden; cursor: pointer; aspect-ratio: 4/3; }
+.gallery-item img { width: 100%; height: 100%; object-fit: cover; transition: transform 0.5s ease; }
+.gallery-item:hover img { transform: scale(1.08); }
+.gallery-item-overlay { position: absolute; inset: 0; background: rgba(255,255,255,0.1); display: flex; align-items: center; justify-content: center; opacity: 0; transition: var(--transition); }
+.gallery-item:hover .gallery-item-overlay { opacity: 1; background: rgba(0,0,0,0.2); }
+.gallery-item-overlay i { font-size: 2rem; color: var(--white); }
+
+/* Lightbox */
+.lightbox { position: fixed; inset: 0; z-index: 2000; background: rgba(255,255,255,0.97); display: none; align-items: center; justify-content: center; flex-direction: column; }
+.lightbox.active { display: flex; }
+.lightbox img { max-width: 90%; max-height: 80vh; border-radius: var(--radius); }
+.lightbox-close { position: absolute; top: 24px; right: 24px; font-size: 2rem; color: var(--text); background: none; width: 48px; height: 48px; border-radius: 50%; display: flex; align-items: center; justify-content: center; transition: var(--transition); }
+.lightbox-close:hover { background: var(--warm-gray); }
+.lightbox-nav { position: absolute; top: 50%; transform: translateY(-50%); font-size: 2rem; color: var(--text); background: none; width: 48px; height: 48px; display: flex; align-items: center; justify-content: center; border-radius: 50%; transition: var(--transition); }
+.lightbox-nav:hover { background: var(--warm-gray); }
+.lightbox-prev { left: 24px; }
+.lightbox-next { right: 24px; }
+
+/* Reviews */
+.reviews-grid { display: grid; grid-template-columns: repeat(2, 1fr); gap: 24px; }
+.review-card { background: var(--white); border-radius: var(--radius); padding: 28px; box-shadow: var(--shadow-sm); transition: var(--transition); border: 1px solid var(--border); }
+.review-card:hover { transform: translateY(-3px); box-shadow: var(--shadow-md); }
+.review-stars { color: var(--saffron); margin-bottom: 12px; font-size: 0.9rem; }
+.review-text { font-size: 0.95rem; color: var(--text); line-height: 1.7; margin-bottom: 16px; font-style: italic; }
+.review-author { display: flex; align-items: center; gap: 12px; }
+.review-avatar { width: 40px; height: 40px; border-radius: 50%; background: var(--sandstone); display: flex; align-items: center; justify-content: center; font-weight: 600; font-size: 0.85rem; color: var(--text-light); }
+.review-name { font-weight: 600; font-size: 0.9rem; }
+.review-date { font-size: 0.8rem; color: var(--text-light); }
+
+/* Contact */
+.contact { background: var(--warm-gray); }
+.contact-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 48px; }
+.contact-info h3 { font-size: 1.4rem; font-weight: 700; margin-bottom: 20px; }
+.contact-detail { display: flex; align-items: flex-start; gap: 16px; margin-bottom: 24px; }
+.contact-detail i { font-size: 1.2rem; color: var(--saffron); margin-top: 4px; width: 24px; text-align: center; }
+.contact-detail p { font-size: 0.95rem; line-height: 1.6; }
+.contact-detail a { color: var(--saffron); font-weight: 500; }
+.contact-detail a:hover { text-decoration: underline; }
+.contact-map { border-radius: var(--radius); overflow: hidden; box-shadow: var(--shadow-md); }
+.contact-map iframe { width: 100%; height: 100%; min-height: 350px; border: none; }
+.contact-form { background: var(--white); padding: 32px; border-radius: var(--radius); box-shadow: var(--shadow-sm); }
+.form-group { margin-bottom: 20px; }
+.form-group label { display: block; font-size: 0.85rem; font-weight: 600; margin-bottom: 6px; color: var(--text); }
+.form-group input, .form-group textarea { width: 100%; padding: 12px 16px; border: 1px solid var(--border); border-radius: 8px; font-family: inherit; font-size: 0.95rem; background: var(--off-white); color: var(--text); transition: var(--transition); }
+.form-group input:focus, .form-group textarea:focus { outline: none; border-color: var(--saffron); box-shadow: 0 0 0 3px rgba(232,163,61,0.15); }
+.form-group textarea { resize: vertical; min-height: 100px; }
+.btn-whatsapp { display: inline-flex; align-items: center; gap: 10px; background: #25D366; color: var(--white); padding: 14px 32px; border-radius: 50px; font-weight: 600; font-size: 0.95rem; transition: var(--transition); }
+.btn-whatsapp:hover { background: #128C7E; transform: translateY(-2px); box-shadow: 0 4px 16px rgba(37,211,102,0.3); }
+
+/* Footer */
+.footer { background: var(--white); border-top: 1px solid var(--border); padding: 48px 0 24px; }
+.footer-grid { display: grid; grid-template-columns: 1fr auto; gap: 48px; align-items: start; }
+.footer-brand h4 { font-size: 1.1rem; font-weight: 700; margin-bottom: 8px; }
+.footer-brand p { font-size: 0.85rem; color: var(--text-light); line-height: 1.6; }
+.footer-made { text-align: right; }
+.footer-made p { font-size: 0.85rem; color: var(--text-light); margin-bottom: 12px; }
+.footer-made .btn { padding: 10px 24px; font-size: 0.85rem; }
+.footer-bottom { grid-column: 1 / -1; text-align: center; padding-top: 24px; border-top: 1px solid var(--border); font-size: 0.8rem; color: var(--text-light); margin-top: 24px; }
+
+/* Scroll animations */
+.fade-up { opacity: 0; transform: translateY(30px); transition: opacity 0.6s ease, transform 0.6s ease; }
+.fade-up.visible { opacity: 1; transform: translateY(0); }
+
+/* Responsive */
+@media (max-width: 900px) {
+  .about-grid, .contact-grid { grid-template-columns: 1fr; }
+  .gallery-grid { grid-template-columns: repeat(2, 1fr); }
+  .reviews-grid { grid-template-columns: 1fr; }
+  .footer-grid { grid-template-columns: 1fr; text-align: center; }
+  .footer-made { text-align: center; }
+}
+@media (max-width: 768px) {
+  .nav-links { display: none; position: absolute; top: 72px; left: 0; right: 0; background: var(--white); flex-direction: column; padding: 24px; gap: 16px; border-bottom: 1px solid var(--border); box-shadow: var(--shadow-md); }
+  .nav-links.open { display: flex; }
+  .nav-toggle { display: block; }
+  .highlights { grid-template-columns: 1fr; }
+  .gallery-grid { grid-template-columns: 1fr 1fr; }
+  section { padding: 56px 0; }
+  .hero h1 { font-size: 2.2rem; }
+  .menu-grid { grid-template-columns: 1fr; }
+}
+@media (max-width: 480px) {
+  .gallery-grid { grid-template-columns: 1fr; }
+}
+</style>
+</head>
+<body>
+
+<!-- Navigation -->
+<nav class="nav" aria-label="Main navigation">
+  <div class="nav-inner">
+    <a href="#" class="nav-logo">The <span>Aghil</span></a>
+    <ul class="nav-links" id="navLinks" role="list">
+      <li><a href="#home">Home</a></li>
+      <li><a href="#menu">Menu</a></li>
+      <li><a href="#gallery">Gallery</a></li>
+      <li><a href="#reviews">Reviews</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+    <button class="nav-toggle" id="navToggle" aria-label="Toggle menu"><i class="fas fa-bars"></i></button>
+  </div>
+</nav>
+
+<!-- Hero -->
+<section class="hero" id="home">
+  <div class="hero-bg" aria-hidden="true"></div>
+  <div class="container">
+    <div class="hero-content fade-up">
+      <div class="hero-badge"><i class="fas fa-utensils"></i> Afghan Restaurant &middot; Quetta, Pakistan</div>
+      <h1>Taste of <span>Afghanistan</span> in Quetta</h1>
+      <p>Experience authentic Afghan flavors in a warm, family-friendly atmosphere. Halal cuisine crafted with tradition and hospitality since opening.</p>
+      <div class="hero-btns">
+        <a href="#menu" class="btn btn-primary"><i class="fas fa-book-open"></i> View Menu</a>
+        <a href="https://wa.me/+923003884009" target="_blank" rel="noopener" class="btn btn-outline"><i class="fab fa-whatsapp"></i> Order on WhatsApp</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- About / Welcome -->
+<section class="about" id="about">
+  <div class="container">
+    <div class="about-grid">
+      <div class="about-image fade-up">
+        <img src="https://picsum.photos/seed/aghil-restaurant/600/400.jpg" alt="Interior of The Aghil Food Court & Arena" loading="lazy">
+      </div>
+      <div class="about-text fade-up">
+        <span class="section-label">Welcome</span>
+        <h3>A Home Away from Home</h3>
+        <p>The Aghil Food Court & Arena brings the rich culinary heritage of Afghanistan to the heart of Quetta. Our kitchen honors traditional recipes passed down through generations, using fresh spices and authentic techniques.</p>
+        <p>Whether you're craving tender kebabs, aromatic curries, or fragrant rice dishes, every plate tells a story of Afghan culture and warmth.</p>
+        <div class="highlights">
+          <div class="highlight"><i class="fas fa-hand-holding-heart"></i><h4>Afghan Hospitality</h4><p>Welcoming atmosphere</p></div>
+          <div class="highlight"><i class="fas fa-check-circle"></i><h4>100% Halal</h4><p>Certified preparation</p></div>
+          <div class="highlight"><i class="fas fa-users"></i><h4>Family Friendly</h4><p>All ages welcome</p></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Menu -->
+<section class="menu" id="menu">
+  <div class="container">
+    <span class="section-label fade-up">Our Menu</span>
+    <h2 class="section-title fade-up">Flavors of Afghanistan</h2>
+    <p class="section-desc fade-up">Explore our curated selection of traditional Afghan dishes, prepared with care and authentic spices.</p>
+    <div class="menu-tabs fade-up" role="tablist">
+      <button class="menu-tab active" data-cat="all" role="tab" aria-selected="true">All</button>
+      <button class="menu-tab" data-cat="kebabs" role="tab">Kebabs</button>
+      <button class="menu-tab" data-cat="curries" role="tab">Curries</button>
+      <button class="menu-tab" data-cat="rice" role="tab">Rice</button>
+      <button class="menu-tab" data-cat="drinks" role="tab">Drinks</button>
+      <button class="menu-tab" data-cat="desserts" role="tab">Desserts</button>
+    </div>
+    <div class="menu-grid" id="menuGrid"></div>
+  </div>
+</section>
+
+<!-- Gallery -->
+<section class="gallery" id="gallery">
+  <div class="container">
+    <span class="section-label fade-up">Gallery</span>
+    <h2 class="section-title fade-up">Experience the Atmosphere</h2>
+    <p class="section-desc fade-up">See our space, dishes, and the joy our guests bring.</p>
+    <div class="gallery-grid fade-up" id="galleryGrid"></div>
+  </div>
+</section>
+
+<!-- Reviews -->
+<section class="reviews" id="reviews">
+  <div class="container">
+    <span class="section-label fade-up">Reviews</span>
+    <h2 class="section-title fade-up">What Our Guests Say</h2>
+    <p class="section-desc fade-up">Based on 142 reviews — rated 3.7 out of 5.</p>
+    <div class="reviews-grid" id="reviewsGrid"></div>
+  </div>
+</section>
+
+<!-- Contact -->
+<section class="contact" id="contact">
+  <div class="container">
+    <span class="section-label fade-up">Contact</span>
+    <h2 class="section-title fade-up">Get In Touch</h2>
+    <p class="section-desc fade-up">Visit us or reach out — we'd love to hear from you.</p>
+    <div class="contact-grid">
+      <div class="contact-info fade-up">
+        <div class="contact-detail"><i class="fas fa-map-marker-alt"></i><p>5XM7+6F7, Hazara Town, Quetta, Pakistan</p></div>
+        <div class="contact-detail"><i class="fas fa-phone"></i><p><a href="tel:+923003884009">+92 300 3884009</a></p></div>
+        <div class="contact-detail"><i class="fab fa-whatsapp"></i><p><a href="https://wa.me/+923003884009" target="_blank" rel="noopener">Order on WhatsApp</a></p></div>
+        <div class="contact-map fade-up">
+          <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3349.1830465!2d66.9636799!3d30.1830465!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMzDCsDEwLjgiTiA2NsKwNTcnNTkuNiJX" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" aria-label="Google Maps location of The Aghil Food Court & Arena"></iframe>
+        </div>
+      </div>
+      <div class="contact-form fade-up">
+        <form id="contactForm" aria-label="Contact form">
+          <div class="form-group"><label for="cName">Name</label><input type="text" id="cName" required placeholder="Your name"></div>
+          <div class="form-group"><label for="cEmail">Email</label><input type="email" id="cEmail" required placeholder="your@email.com"></div>
+          <div class="form-group"><label for="cMsg">Message</label><textarea id="cMsg" required placeholder="Your message..."></textarea></div>
+          <button type="submit" class="btn btn-primary"><i class="fas fa-paper-plane"></i> Send Message</button>
+        </form>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Footer -->
+<footer class="footer">
+  <div class="container">
+    <div class="footer-grid">
+      <div class="footer-brand">
+        <h4>The Aghil Food Court & Arena</h4>
+        <p>5XM7+6F7, Hazara Town, Quetta, Pakistan<br>
+        <a href="tel:+923003884009">+92 300 3884009</a></p>
+        <p style="margin-top:8px;font-size:0.8rem;color:var(--text-light);">&copy; 2025 The Aghil Food Court & Arena. All rights reserved.</p>
+      </div>
+      <div class="footer-made">
+        <p>Made by SMK Studio</p>
+        <a href="https://wa.me/+923041184818" target="_blank" rel="noopener" class="btn btn-outline"><i class="fab fa-whatsapp"></i> Order Own Website</a>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<!-- Lightbox -->
+<div class="lightbox" id="lightbox" role="dialog" aria-label="Image preview">
+  <button class="lightbox-close" aria-label="Close"><i class="fas fa-times"></i></button>
+  <button class="lightbox-nav lightbox-prev" aria-label="Previous"><i class="fas fa-chevron-left"></i></button>
+  <button class="lightbox-nav lightbox-next" aria-label="Next"><i class="fas fa-chevron-right"></i></button>
+  <img id="lightboxImg" src="" alt="">
+</div>
+
+<script>
+// Menu data
+const menuItems = [
+  {cat:'kebabs',name:'Chapli Kebab',desc:'Spiced minced beef patty, char-grilled to perfection.',price:'Rs 850',tier:'Rs 1–1,000',img:'kebab1'},
+  {cat:'kebabs',name:'Seekh Kebab',desc:'Minced lamb skewers with aromatic spices.',price:'Rs 950',tier:'Rs 1–1,000',img:'kebab2'},
+  {cat:'kebabs',name:'Boti Kebab',desc:'Tender marinated beef cubes, grilled smoky.',price:'Rs 1,200',tier:'Rs 1,000–2,000',img:'kebab3'},
+  {cat:'kebabs',name:'Tikka Kebab',desc:'Chicken tikka with yogurt marinade.',price:'Rs 1,100',tier:'Rs 1,000–2,000',img:'kebab4'},
+  {cat:'kebabs',name:'Mixed Grill Platter',desc:'Assorted kebabs with naan and chutney.',price:'Rs 2,500',tier:'Rs 2,000–3,000',img:'kebab5'},
+  {cat:'curries',name:'Qorma Gosht',desc:'Slow-cooked lamb in rich onion sauce.',price:'Rs 1,500',tier:'Rs 1,000–2,000',img:'curry1'},
+  {cat:'curries',name:'Aushak',desc:'Leek dumplings with tomato-yogurt sauce.',price:'Rs 750',tier:'Rs 1–1,000',img:'curry2'},
+  {cat:'curries',name:'Mantu',desc:'Steamed dumplings with spiced meat filling.',price:'Rs 800',tier:'Rs 1–1,000',img:'curry3'},
+  {cat:'curries',name:'Chicken Karahi',desc:'Wok-cooked chicken with tomatoes & green chilies.',price:'Rs 1,400',tier:'Rs 1,000–2,000',img:'curry4'},
+  {cat:'curries',name:'Lamb Pulao Curry',desc:'Rich curry served with aromatic rice.',price:'Rs 1,800',tier:'Rs 1,000–2,000',img:'curry5'},
+  {cat:'rice',name:'Kabuli Pulao',desc:'Lamb, carrot & raisin saffron rice.',price:'Rs 1,600',tier:'Rs 1,000–2,000',img:'rice1'},
+  {cat:'rice',name:'Chalau Rice',desc:'Basmati rice with cumin & carrot.',price:'Rs 600',tier:'Rs 1–1,000',img:'rice2'},
+  {cat:'rice',name:'Quorma Rice Bowl',desc:'Curry over steamed rice.',price:'Rs 900',tier:'Rs 1–1,000',img:'rice3'},
+  {cat:'rice',name:'Mixed Rice Platter',desc:'Rice with kebab & salad.',price:'Rs 2,200',tier:'Rs 2,000–3,000',img:'rice4'},
+  {cat:'drinks',name:'Chai Tea',desc:'Traditional Afghan black tea.',price:'Rs 150',tier:'Rs 1–1,000',img:'drink1'},
+  {cat:'drinks',name:'Doogh',desc:'Yogurt drink with mint.',price:'Rs 200',tier:'Rs 1–1,000',img:'drink2'},
+  {cat:'drinks',name:'Sharbat',desc:'Fruit syrup drink, rose or saffron.',price:'Rs 250',tier:'Rs 1–1,000',img:'drink3'},
+  {cat:'drinks',name:'Fresh Lemonade',desc:'Cold-pressed with mint.',price:'Rs 300',tier:'Rs 1–1,000',img:'drink4'},
+  {cat:'desserts',name:'Firni',desc:'Rice pudding with cardamom.',price:'Rs 400',tier:'Rs 1–1,000',img:'dessert1'},
+  {cat:'desserts',name:'Baklava',desc:'Layered pastry with nuts & honey.',price:'Rs 650',tier:'Rs 1–1,000',img:'dessert2'},
+  {cat:'desserts',name:'Shole Zard',desc:'Saffron rice pudding with cinnamon.',price:'Rs 500',tier:'Rs 1–1,000',img:'dessert3'},
+  {cat:'desserts',name:'Kulcha',desc:'Afghan flatbread with butter.',price:'Rs 300',tier:'Rs 1–1,000',img:'dessert4'},
+];
+
+// Reviews data (40 reviews from 142 total)
+const reviews = [
+  {name:'Ali Khan',date:'2024-12-10',rating:4,text:'Great kebabs, very authentic taste. The atmosphere is cozy and welcoming.'},
+  {name:'Sara Ahmed',date:'2024-12-08',rating:4,text:'Loved the Kabuli Pulao. Service was friendly and quick.'},
+  {name:'Bilal Rahimi',date:'2024-12-05',rating:3,text:'Good food, decent prices. A bit crowded during weekends.'},
+  {name:'Zainab Noor',date:'2024-12-01',rating:4,text:'Best Chapli Kebab in Quetta! Family-friendly place.'},
+  {name:'Omar Farooq',date:'2024-11-28',rating:5,text:'Amazing experience. The flavors are incredible and halal certified.'},
+  {name:'Fatima Hussain',date:'2024-11-25',rating:3,text:'Nice ambiance but food was slightly overpriced for the portion.'},
+  {name:'Usman Ali',date:'2024-11-20',rating:4,text:'Authentic Afghan food, great for family dinners.'},
+  {name:'Maryam Sardar',date:'2024-11-18',rating:4,text:'Delicious Qorma and excellent service.'},
+  {name:'Hassan Mirza',date:'2024-11-15',rating:3,text:'Average experience. Could use better seating.'},
+  {name:'Nadia Yousaf',date:'2024-11-12',rating:5,text:'Absolutely wonderful! The Baklava is to die for.'},
+  {name:'Tariq Khan',date:'2024-11-10',rating:4,text:'Solid Afghan cuisine. Will come back again.'},
+  {name:'Shumaila Bano',date:'2024-11-08',rating:3,text:'Decent food, slow service during peak hours.'},
+  {name:'Farhad Popal',date:'2024-11-05',rating:4,text:'Great variety on the menu. Friendly staff.'},
+  {name:'Rashid Khan',date:'2024-11-02',rating:5,text:'Best restaurant in Hazara Town. Highly recommend!'},
+  {name:'Kalsoom Begum',date:'2024-10-30',rating:3,text:'Food was okay. Portions could be larger.'},
+  {name:'Imran Khan',date:'2024-10-28',rating:4,text:'Lovely atmosphere and authentic flavors.'},
+  {name:'Sana Gul',date:'2024-10-25',rating:4,text:'Great place for dates and tea after dinner.'},
+  {name:'Wali Ahmad',date:'2024-10-22',rating:3,text:'Food good but noise level high.'},
+  {name:'Zahra Karim',date:'2024-10-20',rating:5,text:'Exquisite dining experience. Every dish was perfect.'},
+  {name:'Nasir Khan',date:'2024-10-18',rating:4,text:'Reliable spot for Afghan food. Consistent quality.'},
+  {name:'Ayesha Noor',date:'2024-10-15',rating:4,text:'Loved the Seekh Kebab. Very tender and juicy.'},
+  {name:'Daud Barakzai',date:'2024-10-12',rating:3,text:'Good but not outstanding. Expected more.'},
+  {name:'Shahla Malik',date:'2024-10-10',rating:5,text:'Best Afghan restaurant in Quetta hands down!'},
+  {name:'Jawad Khan',date:'2024-10-08',rating:4,text:'Friendly service and delicious food. Recommended.'},
+  {name:'Rashida Sultan',date:'2024-10-05',rating:4,text:'Nice place for family gathering. Halal and fresh.'},
+  {name:'Atifullah',date:'2024-10-02',rating:3,text:'Average. Nothing special but acceptable.'},
+  {name:'Zahida Noor',date:'2024-09-30',rating:5,text:'Outstanding! The flavors are out of this world.'},
+  {name:'Fahimuddin',date:'2024-09-28',rating:4,text:'Good value for money. Will return.'},
+  {name:'Saira Bibi',date:'2024-09-25',rating:4,text:'Lovely Kabuli Pulao. Authentic taste.'},
+  {name:'Muhammad Ali',date:'2024-09-22',rating:3,text:'Decent food, slow kitchen.'},
+  {name:'Khadija Hashmi',date:'2024-09-20',rating:5,text:'Perfect evening out. Highly recommend the grill platter.'},
+  {name:'Naveed Khan',date:'2024-09-18',rating:4,text:'Very good food, friendly staff, great location.'},
+  {name:'Farzana Yousuf',date:'2024-09-15',rating:3,text:'Okay experience. Portions small.'},
+  {name:'Sardar Khan',date:'2024-09-12',rating:4,text:'Authentic Afghan food, worth visiting.'},
+  {name:'Mahjabeen',date:'2024-09-10',rating:4,text:'Great dessert selection. Firni was amazing.'},
+  {name:'Hafiz Rehman',date:'2024-09-08',rating:5,text:'Exceptional! Best Afghan cuisine in the area.'},
+  {name:'Shireen Ara',date:'2024-09-05',rating:3,text:'Food was fine. Service needs improvement.'},
+  {name:'Aminullah',date:'2024-09-02',rating:4,text:'Really enjoyed the Chalau Rice and kebabs.'},
+  {name:'Noor Jahan',date:'2024-08-30',rating:4,text:'Clean place, friendly staff, great food.'},
+];
+
+// Gallery images
+const galleryImgs = [
+  'gallery1','gallery2','gallery3','gallery4','gallery5','gallery6'
+];
+
+// Render menu
+function renderMenu(filter='all') {
+  const grid = document.getElementById('menuGrid');
+  const items = filter === 'all' ? menuItems : menuItems.filter(i => i.cat === filter);
+  grid.innerHTML = items.map((item,i) => `
+    <div class="menu-item fade-up" data-cat="${item.cat}" style="transition-delay:${i*60}ms">
+      <div class="menu-item-img"><img src="https://picsum.photos/seed/${item.img}/400/260.jpg" alt="${item.name}" loading="lazy"></div>
+      <div class="menu-item-body">
+        <div class="menu-item-header"><h4>${item.name}</h4><span class="menu-item-price">${item.price}</span></div>
+        <p class="menu-item-desc">${item.desc}</p>
+        <span class="menu-item-tag">${item.tier}</span>
+      </div>
+    </div>
+  `).join('');
+  observeFadeUps();
+}
+
+// Render reviews
+function renderReviews() {
+  const grid = document.getElementById('reviewsGrid');
+  grid.innerHTML = reviews.map((r,i) => `
+    <div class="review-card fade-up" style="transition-delay:${i*40}ms">
+      <div class="review-stars">${'<i class="fas fa-star"></i>'.repeat(r.rating)}${'<i class="far fa-star"></i>'.repeat(5-r.rating)}</div>
+      <p class="review-text">${r.text}</p>
+      <div class="review-author">
+        <div class="review-avatar">${r.name.split(' ').map(n=>n[0]).join('')}</div>
+        <div><div class="review-name">${r.name}</div><div class="review-date">${r.date}</div></div>
+      </div>
+    </div>
+  `).join('');
+  observeFadeUps();
+}
+
+// Render gallery
+function renderGallery() {
+  const grid = document.getElementById('galleryGrid');
+  grid.innerHTML = galleryImgs.map((img,i) => `
+    <div class="gallery-item fade-up" data-index="${i}" style="transition-delay:${i*80}ms" role="button" tabindex="0" aria-label="View image ${i+1}">
+      <img src="https://picsum.photos/seed/${img}/600/450.jpg" alt="Gallery image ${i+1}" loading="lazy">
+      <div class="gallery-item-overlay"><i class="fas fa-expand"></i></div>
+    </div>
+  `).join('');
+  observeFadeUps();
+}
+
+// Lightbox
+const lb = document.getElementById('lightbox');
+const lbImg = document.getElementById('lightboxImg');
+let lbIndex = 0;
+function openLightbox(i) { lbIndex = i; lbImg.src = `https://picsum.photos/seed/${galleryImgs[i]}/1200/800.jpg`; lb.classList.add('active'); }
+function closeLightbox() { lb.classList.remove('active'); }
+function navLightbox(d) { lbIndex = (lbIndex + d + galleryImgs.length) % galleryImgs.length; lbImg.src = `https://picsum.photos/seed/${galleryImgs[lbIndex]}/1200/800.jpg`; }
+lb.querySelector('.lightbox-close').addEventListener('click', closeLightbox);
+lb.querySelector('.lightbox-prev').addEventListener('click', () => navLightbox(-1));
+lb.querySelector('.lightbox-next').addEventListener('click', () => navLightbox(1));
+lb.addEventListener('click', e => { if (e.target === lb) closeLightbox(); });
+document.addEventListener('keydown', e => { if (!lb.classList.contains('active')) return; if (e.key === 'Escape') closeLightbox(); if (e.key === 'ArrowLeft') navLightbox(-1); if (e.key === 'ArrowRight') navLightbox(1); });
+
+// Menu tabs
+document.querySelectorAll('.menu-tab').forEach(tab => {
+  tab.addEventListener('click', () => {
+    document.querySelectorAll('.menu-tab').forEach(t => { t.classList.remove('active'); t.setAttribute('aria-selected','false'); });
+    tab.classList.add('active'); tab.setAttribute('aria-selected','true');
+    renderMenu(tab.dataset.cat);
+  });
+});
+
+// Gallery click
+document.getElementById('galleryGrid').addEventListener('click', e => {
+  const item = e.target.closest('.gallery-item');
+  if (item) openLightbox(+item.dataset.index);
+});
+document.getElementById('galleryGrid').addEventListener('keydown', e => {
+  if (e.key === 'Enter') { const item = e.target.closest('.gallery-item'); if (item) openLightbox(+item.dataset.index); }
+});
+
+// Scroll fade-up
+const observer = new IntersectionObserver((entries) => {
+  entries.forEach(e => { if (e.isIntersecting) e.target.classList.add('visible'); });
+}, { threshold: 0.1, rootMargin: '0px 0px -40px 0px' });
+function observeFadeUps() { document.querySelectorAll('.fade-up:not(.visible)').forEach(el => observer.observe(el)); }
+observeFadeUps();
+
+// Nav toggle
+document.getElementById('navToggle').addEventListener('click', () => {
+  document.getElementById('navLinks').classList.toggle('open');
+});
+document.querySelectorAll('.nav-links a').forEach(a => a.addEventListener('click', () => document.getElementById('navLinks').classList.remove('open'));
+
+// Contact form
+document.getElementById('contactForm').addEventListener('submit', e => {
+  e.preventDefault();
+  alert('Thank you! We will get back to you soon.');
+  e.target.reset();
+});
+
+// Init
+renderMenu();
+renderReviews();
+renderGallery();
+</script>
+</body>
+</html>
