@@ -1,0 +1,325 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Zee Pizza Point | Cheema Town, Bahawalpur</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet de/aos/css/aos.css" />
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+</head>
+<body>
+
+    <nav class="navbar">
+        <div class="container nav-container">
+            <a href="#home" class="logo">Zee Pizza <span class="accent">Point</span></a>
+            <ul class="nav-links">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#menu">Menu</a></li>
+                <li><a href="#gallery">Gallery</a></li>
+                <li><a href="#reviews">Reviews</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+            <div class="menu-toggle">
+                <i class="fas fa-bars"></i>
+            </div>
+        </div>
+    </nav>
+
+    <section id="home" class="hero">
+        <div class="hero-overlay"></div>
+        <div class="container hero-content" data-aos="fade-up">
+            <h1 class="brand-name">Zee Pizza Point</h1>
+            <p class="tagline">Delicious, flavorful pizzas made with fresh ingredients in Cheema Town, Bahawalpur.</p>
+            <div class="hero-btns">
+                <a href="#menu" class="btn btn-primary">View Menu</a>
+                <a href="https://wa.me/923280073780" class="btn btn-secondary"><i class="fab fa-whatsapp"></i> Order on WhatsApp</a>
+            </div>
+        </div>
+    </section>
+
+    <section class="about container section-padding" id="about">
+        <div class="section-header" data-aos="fade-up">
+            <h2>Welcome to Zee Pizza</h2>
+            <div class="underline"></div>
+        </div>
+        <div class="about-grid">
+            <div class="about-text" data-aos="fade-right">
+                <p>Zee Pizza Point offers a cozy and friendly atmosphere perfect for grabbing your favorite fast food. We specialize in high-quality, delicious pizzas crafted with the freshest ingredients to ensure every bite is a flavor explosion.</p>
+                <p>While we primarily focus on <strong>efficient take-away service</strong>, our goal is to provide a satisfying and friendly experience every single time you visit.</p>
+            </div>
+            <div class="highlights-grid" data-aos="fade-left">
+                <div class="highlight-card">
+                    <i class="fas fa-pizza-slice"></i>
+                    <h3>Fresh Ingredients</h3>
+                    <p>Only the best for our customers.</p>
+                </div>
+                <div class="highlight-card">
+                    <i class="fas fa-bolt"></i>
+                    <h3>Fast Service</h3>
+                    <p>Quick and efficient take-away.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="menu" class="menu section-padding bg-light">
+        <div class="container">
+            <div class="section-header" data-aos="fade-up">
+                <h2>Our Delicious Menu</h2>
+                <p>Hand-crafted flavors delivered straight to you.</p>
+                <div class="underline"></div>
+            </div>
+            
+            <div class="menu-categories">
+                <div class="menu-grid">
+                    <!-- Pizzas -->
+                    <div class="menu-category-block" data-aos="fade-up">
+                        <h3 class="category-title"><i class="fas fa-cheese"></i> Signature Pizzas</h3>
+                        <div class="menu-item">
+                            <div class="item-info">
+                                <h4>Chicken Tikka Pizza</h4>
+                                <p>Spicy chicken, onions, and bell peppers.</p>
+                            </div>
+                            <span class="item-price">Rs. 850</span>
+                        </div>
+                        <div class="menu-item">
+                            <div class="item-info">
+                                <h4>Cheese Lover's</h4>
+                                <p>Extra mozzarella and cheddar blend.</p>
+                            </div>
+                            <span class="item-price">Rs. 750</span>
+                        </div>
+                        <div class="menu-item">
+                            <div class="item-info">
+                                <h4>Veggie Supreme</h4>
+                                <p>Fresh olives, corn, and peppers.</p>
+                            </div>
+                            <span class="item-price">Rs. 650</span>
+                        </div>
+                    </div>
+
+                    <!-- Sides -->                    <div class="menu-category-block" data-aos="fade-up" data-aos-delay="100">
+                        <h3 class="category-title"><i class="fas fa-drumstick-bite"></i> Sides & Snacks</h3>
+                        <div class="menu-item">
+                            <div class="item-info">
+                                <h4>Zinger Burger</h4>
+                                <p>Crispy chicken fillet with mayo.</p>
+                            </div>
+                            <span class="item-price">Rs. 350</span>
+                        </div>
+                        <div class="menu-item">
+                            <div class="item-info">
+                                <h4>French Fries</h4>
+                                <p>Golden crispy salted fries.</p>
+                            </div>
+                            <span class="item-price">Rs. 200</span>
+                        </div>
+                        <div class="menu-item">
+                            <div class="item-info">
+                                <h4>Chicken Nuggets</h4>
+                                <p>6 pieces with dipping sauce.</p>
+                            </div>
+                            <span class="item-price">Rs. 400</span>
+                        </div>
+                    </div>
+
+                    <!-- Drinks -->
+                    <div class="menu-category-block" data-aos="fade-up" data-aos-delay="200">
+                        <h3 class="category-title"><i class="fas fa-glass-water"></i> Beverages</h3>
+                        <div class="menu-item">
+                            <div class="item-info">
+                                <h4>Soft Drinks</h4>
+                                <p>Chilled 500ml bottles.</p>
+                            </div>
+                            <span class="item-price">Rs. 120</span>
+                        </div>
+                        <div class="menu-item">
+                            <div class="item-info">
+                                <h4>Mineral Water</h4>
+                                <p>Pure refreshing water.</p>
+                            </div>
+                            <span class="item-price">Rs. 80</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="gallery" class="gallery section-padding">
+        <div class="container">
+            <div class="section-header" data-aos="fade-up">
+                <h2>Photo Gallery</h2>
+                <div class="underline"></div>
+            </div>
+            <div class="gallery-grid">
+                <div class="gallery-item" data-aos="zoom-in"><img src="https://images.unsplash.com/photo-1513104890138-7c749659a591?auto=format&fit=crop&w=600&q=80" alt="Pizza 1"></div>
+                <div class="gallery-item" data-aos="zoom-in" data-aos-delay="100"><img src="https://images.unsplash.com/photo-1565299624946-b28f40a0ae38?auto=format&fit=crop&w=600&q=80" alt="Pizza 2"></div>
+                <div class="gallery-item" data-aos="zoom-in" data-aos-delay="200"><img src="https://images.unsplash.com/photo-1574071318508-1cdbad80ad38?auto=format&fit=crop&w=600&q=80" alt="Pizza 3"></div>
+                <div class="gallery-item" data-aos="zoom-in"><img src="https://images.unsplash.com/photo-1541745537411-b8046dc6d66c?auto=format&fit=crop&w=600&q=80" alt="Pizza 4"></div>
+                <div class="gallery-item" data-aos="zoom-in" data-aos-delay="100"><img src="https://images.unsplash.com/photo-1593560708920-61dd98c46a4e?auto=format&fit=crop&w=600&q=80" alt="Pizza 5"></div>
+                <div class="gallery-item" data-aos="zoom-in" data-aos-delay="200"><img src="https://images.unsplash.com/photo-1544333346-64c4fe20939e?auto=format&fit=crop&w=600&q=80" alt="Pizza 6"></div>
+            </div>
+        </div>
+    </section>
+
+    <section id="reviews" class="reviews section-padding bg-light">
+        <div class="container">
+            <div class="section-header" data-aos="fade-up">
+                <h2>What Our Customers Say</h2>
+                <div class="underline"></div>
+            </div>
+            <div class="reviews-container">
+                <!-- Review 1 -->
+                <div class="review-card" data-aos="fade-up">
+                    <div class="stars">
+                        <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+                    </div>
+                    <p class="review-text">"Zee Pizza is a cozy place with a friendly atmosphere and nice staff. When you go in, you'll feel welcomed right away. Their pizzas are delicious and full of flavor, making them the best thing on the menu."</p>
+                    <div class="reviewer-info">
+                        <div class="reviewer-avatar">SA</div>
+                        <div>
+                            <h4 class="reviewer-name">Sana Amjad</h4>
+                            <p class="reviewer-meta">Verified Customer</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Review 2 -->
+                <div class="review-card" data-aos="fade-up" data-aos-delay="100">
+                    <div class="stars">
+                        <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="far fa-star"></i>
+                    </div>
+                    <p class="review-text">"Taste good but sitting arrangements not good. Only take away service providing."</p>
+                    <div class="reviewer-info">
+                        <div class="reviewer-avatar">BK</div>
+                        <div>
+                            <h4 class="reviewer-name">Baloch Khan</h4>
+                            <p class="reviewer-meta">Local Guide</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Review 3 -->
+                <div class="review-card" data-aos="fade-up" data-aos-delay="200">
+                    <div class="stars">
+                        <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="far fa-star"></i>
+                    </div>
+                    <p class="review-text">"Zee Pizza Point offered a great experience with delicious pizza, fresh ingredients, and a well-balanced flavor. The service was efficient, and the staff was friendly."</p>
+                    <div class="reviewer-info">
+                        <div class="reviewer-avatar">KA</div>
+                        <div>
+                            <h4 class="reviewer-name">Kurkt Ali Turk ulo</h4>
+                            <p class="reviewer-meta">Local Guide</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact" class="contact section-padding">
+        <div class="container">
+            <div class="section-header" data-aos="fade-up">
+                <h2>Contact Us</h2>
+                <div class="underline"></div>
+            </div>
+            <div class="contact-grid">
+                <div class="contact-info" data-aos="fade-right">
+                    <div class="info-item">
+                        <i class="fas fa-location-dot"></i>
+                        <div>
+                            <h3>Our Location</h3>
+                            <p>Main Chema Chowk Chema, Chowk, Cheema Town Bahawalpur, 63100, Pakistan</p>
+                        </div>
+                    </div>
+                    <div class="info-item">
+                        <i class="fas fa-phone"></i>
+                        <div>
+                            <h3>Phone Number</h3>
+                            <p>+92 328 0073780</p>
+                        </div>
+                    </div>
+                    <div class="info-item">
+                        <i class="fas fa-clock"></i>
+                        <div>
+                            <h3>Opening Hours</h3>
+                            <p>Open daily • Closes 2:30 AM</p>
+                        </div>
+                    </div>
+                    <div class="contact-buttons">
+                        <a href="https://wa.me/923280073780" class="btn btn-whatsapp"><i class="fab fa-whatsapp"></i> WhatsApp Us</a>
+                    </div>
+                </div>
+
+                <div class="contact-form-container" data-aos="fade-left">
+                    <form class="contact-form">
+                        <div class="form-group">
+                            <input type="text" placeholder="Your Name" required>
+                        </div>
+                        <div class="form-group">
+                            <input type="email" placeholder="Your Email" required>
+                        </div>
+                        <div class="form-group">
+                            <textarea rows="5" placeholder="How can we help you?" required></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary">Send Message</button>
+                    </form>
+                </div>
+            </div>
+
+            <div class="map-container" data-aos="zoom-in">
+                <iframe 
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3312.9676417664593!2d71.65000677632354!3d29.39378917643448!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x393b976c48e72a13%3A0xfd0457cc145b7856!2sZee%20Pizza%20Point%20-%20Cheema%20Town%2C%20Bahawalpur!5e0!3m2!1sen!2spk!4v1710000000000!5m2!1sen!2spk" 
+                    width="100%" 
+                    height="450" 
+                    style="border:0; border-radius: 15px;" 
+                    allowfullscreen="" 
+                    loading="lazy"></iframe>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-top">
+                <div class="footer-brand">
+                    <h3>Zee Pizza <span class="accent">Point</span></h3>
+                    <p>Serving joy and flavor in Bahawalpur since 2022.</p>
+                </div>
+                <div class="footer-links">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="#home">Home</a></li>
+                        <li><a href="#menu">Menu</a></li>
+                        <li><a href="#gallery">Gallery</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-contact">
+                    <h4>Get In Touch</h4>
+                    <p><i class="fas fa-phone"></i> +92 328 0073780</p>
+                    <p><i class="fas fa-envelope"></i> contact@zeepizza.com</p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 Zee Pizza Point. All Rights Reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <div class="smk-studio-block">
+        <div class="container">
+            <p>Made by <strong>SMK Studio</strong></p>
+            <a href="https://wa.me/923041184818" class="btn btn-smk">Order Own Website</a>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
