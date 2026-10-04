@@ -1,1 +1,417 @@
-{"index.html":"<!DOCTYPE html>\n<html lang=\"en\">\n<head>\n  <meta charset=\"UTF-8\" />\n  <meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\" />\n  <title>Bashir Ahmed Karahi Gosht</title>\n  <link rel=\"stylesheet\" href=\"styles.css\" />\n  <link rel=\"preconnect\" href=\"https://fonts.googleapis.com\" />\n  <link rel=\"preconnect\" href=\"https://fonts.gstatic.com\" crossorigin />\n  <link href=\"https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Playfair+Display:wght@400;600;700&display=swap\" rel=\"stylesheet\" />\n</head>\n<body>\n  <!-- Sticky Navigation Bar -->\n  <header class=\"navbar\" role=\"banner\">\n    <div class=\"nav-container container\">\n      <a href=\"#home\" class=\"logo\" aria-label=\"Bashir Ahmed Karahi Gosht - Home\">Bashir Ahmed Karahi Gosht</a>\n      <nav class=\"nav-links\" id=\"nav-links\" role=\"navigation\" aria-label=\"Main navigation\">\n        <ul>\n          <li><a href=\"#home\" class=\"nav-link\" data-target=\"home\">Home</a></li>\n          <li><a href=\"#about\" class=\"nav-link\" data-target=\"about\">About</a></li>\n          <li><a href=\"#menu\" class=\"nav-link\" data-target=\"menu\">Menu</a></li>\n          <li><a href=\"#gallery\" class=\"nav-link\" data-target=\"gallery\">Gallery</a></li>\n          <li><a href=\"#reviews\" class=\"nav-link\" data-target=\"reviews\">Reviews</a></li>\n          <li><a href=\"#contact\" class=\"nav-link\" data-target=\"contact\">Contact</a></li>\n        </ul>\n      </nav>\n      <button class=\"nav-toggle\" id=\"nav-toggle\" aria-expanded=\"false\" aria-controls=\"nav-links\" aria-label=\"Toggle navigation menu\">&#9776;</button>\n    </div>\n  </header>\n\n  <!-- Hero Section -->\n  <section class=\"hero\" id=\"home\">\n    <div class=\"hero-overlay\">\n      <div class=\"hero-content\">\n        <h1 class=\"hero-title\">Bashir Ahmed Karahi Gosht</h1>\n        <p class=\"hero-tagline\">Authentic Punjabi Desi Chicken &amp; Karahi Specialties</p>\n        <div class=\"hero-ctas\">\n          <a href=\"#menu\" class=\"btn btn-outline scroll-link\">View Menu</a>\n          <a href=\"https://wa.me/923006330765\" class=\"btn btn-primary\" target=\"_blank\" rel=\"noopener\">Order on WhatsApp</a>\n        </div>\n      </div>\n    </div>\n  </section>\n\n  <!-- About Section -->\n  <section class=\"section bg-warm-cream\" id=\"about\">\n    <div class=\"container\">\n      <h2 class=\"section-title\">Welcome</h2>\n      <p class=\"section-subtitle\">Serving authentic Punjabi flavors since 1998</p>\n      <div class=\"about-content reveal\">\n        <p>Experience the true taste of Punjab with our signature Desi Chicken Karahi, slow-cooked in pure desi ghee with aromatic spices.</p>\n        <p>Located in the heart of Multan, we offer a warm family atmosphere with separate seating areas and ample parking.</p>\n        <ul class=\"highlights\">\n          <li><strong>Authentic Taste</strong> — Traditional recipes passed down through generations</li>\n          <li><strong>Reasonable Prices</strong> — Quality desi food at affordable rates</li>\n          <li><strong>Separate Seating</strong> — Dedicated family and gents sections</li>\n          <li><strong>Parking Available</strong> — Convenient parking space for customers</li>\n        </ul>\n      </div>\n    </div>\n  </section>\n\n  <!-- Menu Section -->\n  <section class=\"section bg-light-gray\" id=\"menu\">\n    <div class=\"container\">\n      <h2 class=\"section-title\">Our Menu</h2>\n      <p class=\"section-subtitle\">Explore our Karahi, BBQ, Specialties &amp; Retail offerings</p>\n      <div class=\"menu-accordion\">\n        <!-- Karahi Category -->\n        <div class=\"menu-category reveal\">\n          <button class=\"menu-category-header\" aria-expanded=\"false\" aria-controls=\"karahi-panel\">\n            <span>Karahi</span>\n            <span class=\"accordion-icon\">+</span>\n          </button>\n          <div class=\"menu-category-panel\" id=\"karahi-panel\" role=\"region\" hidden>\n            <div class=\"menu-items\">\n              <article class=\"menu-item\">\n                <img class=\"menu-item-image\" src=\"https://images.unsplash.com/photo-1594212043659-5d8ec0b5eeb3?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80\" alt=\"Desi Murgh Karahi\" loading=\"lazy\" />\n                <div class=\"menu-item-content\">\n                  <h3>Desi Murgh Karahi</h3>\n                  <p>Free-range chicken cooked in pure desi ghee with tomatoes, ginger, garlic &amp; green chilies</p>\n                </div>\n                <span class=\"menu-item-price\">PKR 1,200</span>\n              </article>\n              <article class=\"menu-item\">\n                <img class=\"menu-item-image\" src=\"https://images.unsplash.com/photo-1565557623262-b51c2513a641?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80\" alt=\"Desi Chicken Karachi Fried\" loading=\"lazy\" />\n                <div class=\"menu-item-content\">\n                  <h3>Desi Chicken Karachi Fried</h3>\n                  <p>Crispy fried desi chicken in desi ghee — our signature dish</p>\n                </div>\n                <span class=\"menu-item-price\">PKR 1,350</span>\n              </article>\n              <article class=\"menu-item\">\n                <img class=\"menu-item-image\" src=\"https://images.unsplash.com/photo-1601050690597-df0568f70950?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80\" alt=\"Mutton Karahi\" loading=\"lazy\" />\n                <div class=\"menu-item-content\">\n                  <h3>Mutton Karahi</h3>\n                  <p>Tender mutton pieces slow-cooked with aromatic spices in desi ghee</p>\n                </div>\n                <span class=\"menu-item-price\">PKR 1,800</span>\n              </article>\n            </div>\n          </div>\n        </div>\n        <!-- BBQ Category -->\n        <div class=\"menu-category reveal\">\n          <button class=\"menu-category-header\" aria-expanded=\"false\" aria-controls=\"bbq-panel\">\n            <span>BBQ</span>\n            <span class=\"accordion-icon\">+</span>\n          </button>\n          <div class=\"menu-category-panel\" id=\"bbq-panel\" role=\"region\" hidden>\n            <div class=\"menu-items\">\n              <article class=\"menu-item\">\n                <img class=\"menu-item-image\" src=\"https://images.unsplash.com/photo-1603894584373-5ac82b2ae398?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80\" alt=\"Chicken Tikka\" loading=\"lazy\" />\n                <div class=\"menu-item-content\">\n                  <h3>Chicken Tikka</h3>\n                  <p>Marinated chicken chunks grilled over charcoal</p>\n                </div>\n                <span class=\"menu-item-price\">PKR 650</span>\n              </article>\n              <article class=\"menu-item\">\n                <img class=\"menu-item-image\" src=\"https://images.unsplash.com/photo-1599487488170-d11ec9c172f0?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80\" alt=\"Seekh Kabab\" loading=\"lazy\" />\n                <div class=\"menu-item-content\">\n                  <h3>Seekh Kabab</h3>\n                  <p>Minced mutton with spices, grilled on skewers</p>\n                </div>\n                <span class=\"menu-item-price\">PKR 750</span>\n              </article>\n              <article class=\"menu-item\">\n                <img class=\"menu-item-image\" src=\"https://images.unsplash.com/photo-1594212043659-5d8ec0b5eeb3?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80\" alt=\"Malai Boti\" loading=\"lazy\" />\n                <div class=\"menu-item-content\">\n                  <h3>Malai Boti</h3>\n                  <p>Creamy marinated chicken grilled to perfection</p>\n                </div>\n                <span class=\"menu-item-price\">PKR 700</span>\n              </article>\n            </div>\n          </div>\n        </div>\n        <!-- Specialties Category -->\n        <div class=\"menu-category reveal\">\n          <button class=\"menu-category-header\" aria-expanded=\"false\" aria-controls=\"specialties-panel\">\n            <span>Specialties</span>\n            <span class=\"accordion-icon\">+</span>\n          </button>\n          <div class=\"menu-category-panel\" id=\"specialties-panel\" role=\"region\" hidden>\n            <div class=\"menu-items\">\n              <article class=\"menu-item\">\n                <img class=\"menu-item-image\" src=\"https://images.unsplash.com/photo-1601050690597-df0568f70950?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80\" alt=\"Handi Gosht\" loading=\"lazy\" />\n                <div class=\"menu-item-content\">\n                  <h3>Handi Gosht</h3>\n                  <p>Slow-cooked mutton in clay pot with whole spices</p>\n                </div>\n                <span class=\"menu-item-price\">PKR 1,600</span>\n              </article>\n              <article class=\"menu-item\">\n                <img class=\"menu-item-image\" src=\"https://images.unsplash.com/photo-1565557623262-b51c2513a641?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80\" alt=\"Nihari\" loading=\"lazy\" />\n                <div class=\"menu-item-content\">\n                  <h3>Nihari</h3>\n                  <p>Traditional slow-cooked beef stew, served with naan</p>\n                </div>\n                <span class=\"menu-item-price\">PKR 550</span>\n              </article>\n              <article class=\"menu-item\">\n                <img class=\"menu-item-image\" src=\"https://images.unsplash.com/photo-1594212043659-5d8ec0b5eeb3?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80\" alt=\"Paye\" loading=\"lazy\" />\n                <div class=\"menu-item-content\">\n                  <h3>Paye</h3>\n                  <p>Gelatinous goat trotters cooked overnight</p>\n                </div>\n                <span class=\"menu-item-price\">PKR 450</span>\n              </article>\n            </div>\n          </div>\n        </div>\n        <!-- Retail Category -->\n        <div class=\"menu-category reveal\">\n          <button class=\"menu-category-header\" aria-expanded=\"false\" aria-controls=\"retail-panel\">\n            <span>Retail</span>\n            <span class=\"accordion-icon\">+</span>\n          </button>\n          <div class=\"menu-category-panel\" id=\"retail-panel\" role=\"region\" hidden>\n            <div class=\"menu-items\">\n              <article class=\"menu-item\">\n                <img class=\"menu-item-image\" src=\"https://images.unsplash.com/photo-1594212043659-5d8ec0b5eeb3?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80\" alt=\"Bed Sheets &amp; Blankets\" loading=\"lazy\" />\n                <div class=\"menu-item-content\">\n                  <h3>Bed Sheets &amp; Blankets</h3>\n                  <p>Premium quality cotton and wool blends</p>\n                </div>\n                <span class=\"menu-item-price\">PKR 2,500+</span>\n              </article>\n              <article class=\"menu-item\">\n                <img class=\"menu-item-image\" src=\"https://images.unsplash.com/photo-1603894584373-5ac82b2ae398?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80\" alt=\"Gents &amp; Ladies Suits\" loading=\"lazy\" />\n                <div class=\"menu-item-content\">\n                  <h3>Gents &amp; Ladies Suits</h3>\n                  <p>Unstitched fabric suits for all occasions</p>\n                </div>\n                <span class=\"menu-item-price\">PKR 3,000+</span>\n              </article>\n              <article class=\"menu-item\">\n                <img class=\"menu-item-image\" src=\"https://images.unsplash.com/photo-1565557623262-b51c2513a641?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80\" alt=\"Shawls\" loading=\"lazy\" />\n                <div class=\"menu-item-content\">\n                  <h3>Shawls</h3>\n                  <p>Warm woolen and pashmina shawls</p>\n                </div>\n                <span class=\"menu-item-price\">PKR 1,800+</span>\n              </article>\n            </div>\n          </div>\n        </div>\n      </div>\n    </div>\n  </section>\n\n  <!-- Gallery Section -->\n  <section class=\"section bg-warm-cream\" id=\"gallery\">\n    <div class=\"container\">\n      <h2 class=\"section-title\">Gallery</h2>\n      <p class=\"section-subtitle\">A glimpse into our restaurant and dishes</p>\n      <div class=\"gallery-grid\" role=\"list\">\n        <figure class=\"gallery-item reveal\" role=\"listitem\">\n          <img src=\"https://images.unsplash.com/photo-1594212043659-5d8ec0b5eeb3?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80\" alt=\"Restaurant exterior\" loading=\"lazy\" />\n          <figcaption class=\"gallery-caption\">Restaurant Exterior</figcaption>\n        </figure>\n        <figure class=\"gallery-item reveal\" role=\"listitem\">\n          <img src=\"https://images.unsplash.com/photo-1603894584373-5ac82b2ae398?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80\" alt=\"Desi Murgh Karahi\" loading=\"lazy\" />\n          <figcaption class=\"gallery-caption\">Desi Murgh Karahi</figcaption>\n        </figure>\n        <figure class=\"gallery-item reveal\" role=\"listitem\">\n          <img src=\"https://images.unsplash.com/photo-1565557623262-b51c2513a641?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80\" alt=\"Chicken Tikka BBQ\" loading=\"lazy\" />\n          <figcaption class=\"gallery-caption\">Chicken Tikka BBQ</figcaption>\n        </figure>\n        <figure class=\"gallery-item reveal\" role=\"listitem\">\n          <img src=\"https://images.unsplash.com/photo-1594212043659-5d8ec0b5eeb3?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80\" alt=\"Family seating area\" loading=\"lazy\" />\n          <figcaption class=\"gallery-caption\">Family Seating</figcaption>\n        </figure>\n        <figure class=\"gallery-item reveal\" role=\"listitem\">\n          <img src=\"https://images.unsplash.com/photo-1601050690597-df0568f70950?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80\" alt=\"Mutton Karahi\" loading=\"lazy\" />\n          <figcaption class=\"gallery-caption\">Mutton Karahi</figcaption>\n        </figure>\n        <figure class=\"gallery-item reveal\" role=\"listitem\">\n          <img src=\"https://images.unsplash.com/photo-1546069901-ba9599a7e63c?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80\" alt=\"Naan and sides\" loading=\"lazy\" />\n          <figcaption class=\"gallery-caption\">Fresh Naan &amp; Sides</figcaption>\n        </figure>\n      </div>\n    </div>\n  </section>\n\n  <!-- Reviews Section -->\n  <section class=\"section bg-light-gray\" id=\"reviews\">\n    <div class=\"container\">\n      <h2 class=\"section-title\">Customer Reviews</h2>\n      <p class=\"section-subtitle\">What our guests say about us</p>\n      <div class=\"reviews-carousel\" role=\"region\" aria-label=\"Customer reviews\">\n        <div class=\"reviews-track\">\n          <article class=\"review-card reveal\">\n            <div class=\"review-header\">\n              <div class=\"review-avatar\" aria-hidden=\"true\">UG</div>\n              <div class=\"review-meta\">\n                <h4>Dr. Usman Gul Khan</h4>\n                <div class=\"review-stars\" aria-label=\"5 out of 5 stars\">&#9733;&#9733;&#9733;&#9733;&#9733;</div>\n              </div>\n            </div>\n            <p class=\"review-date\">7 months ago</p>\n            <p class=\"review-source\">Local Guide &middot; 117 reviews &middot; 4,385 photos</p>\n            <blockquote class=\"review-quote\">“Very good in taste but sitting is compromised but still good separate sitting spaces for gents and females. Taste is so good…”</blockquote>\n          </article>\n          <article class=\"review-card reveal\">\n            <div class=\"review-header\">\n              <div class=\"review-avatar\" aria-hidden=\"true\">UI</div>\n              <div class=\"review-meta\">\n                <h4>Umer Irshad</h4>\n                <div class=\"review-stars\" aria-label=\"5 out of 5 stars\">&#9733;&#9733;&#9733;&#9733;&#9733;</div>\n              </div>\n            </div>\n            <p class=\"review-date\">a year ago</p>\n            <p class=\"review-source\">Local Guide &middot; 26 reviews &middot; 3 photos</p>\n            <blockquote class=\"review-quote\">“It has the best desi food not of Multan but probably the best of Punjab. I will heavily recommend Desi Chicken Karachi fried with desi Ghee. Finger liking taste and good customer care. They can work on their seating and atmosphere but yet it is the best for Desi food lovers and appropriate for the family dinner.”</blockquote>\n          </article>\n          <article class=\"review-card reveal\">\n            <div class=\"review-header\">\n              <div class=\"review-avatar\" aria-hidden=\"true\">MK</div>\n              <div class=\"review-meta\">\n                <h4>Muhammad Kamran</h4>\n                <div class=\"review-stars\" aria-label=\"4 out of 5 stars\">&#9733;&#9733;&#9733;&#9733;&#9734;</div>\n              </div>\n            </div>\n            <p class=\"review-date\">4 years ago</p>\n            <p class=\"review-source\">Local Guide &middot; 414 reviews &middot; 2,897 photos</p>\n            <blockquote class=\"review-quote\">“Tried their Desi Murgh Karahi It's good in taste. Rooftop sitting is excellent but not for families”</blockquote>\n          </article>\n          <article class=\"review-card reveal\">\n            <div class=\"review-header\">\n              <div class=\"review-avatar\" aria-hidden=\"true\">HR</div>\n              <div class=\"review-meta\">\n                <h4>Hamid Ali Raza</h4>\n                <div class=\"review-stars\" aria-label=\"5 out of 5 stars\">&#9733;&#9733;&#9733;&#9733;&#9733;</div>\n              </div>\n            </div>\n            <p class=\"review-date\">8 years ago</p>\n            <p class=\"review-source\">Local Guide &middot; 33 reviews &middot; 73 photos</p>\n            <blockquote class=\"review-quote\">“Awesome experience of most authentic BBQ and Karahi options. Food quality is amazing. Prices are reasonable. Fairly decent sitting arrangements; not very upscale but still reasonable. Parking space is also sufficient.”</blockquote>\n          </article>\n          <article class=\"review-card reveal\">\n            <div class=\"review-header\">\n              <div class=\"review-avatar\" aria-hidden=\"true\">MH</div>\n              <div class=\"review-meta\">\n                <h4>M Hamza</h4>\n                <div class=\"review-stars\" aria-label=\"5 out of 5 stars\">&#9733;&#9733;&#9733;&#9733;&#9733;</div>\n              </div>\n            </div>\n            <p class=\"review-date\">a year ago</p>\n            <p class=\"review-source\">6 reviews &middot; 6 photos</p>\n            <blockquote class=\"review-quote\">“It's nice place for shoping bed sheet blankets jents ladies suits ladies shall evry thing avail here”</blockquote>\n          </article>\n        </div>\n        <div class=\"carousel-controls\">\n          <button class=\"carousel-btn prev\" aria-label=\"Previous review\">&lt;</button>\n          <button class=\"carousel-btn next\" aria-label=\"Next review\">&gt;</button>\n        </div>\n      </div>\n    </div>\n  </section>\n\n  <!-- Contact Section -->\n  <section class=\"section bg-warm-cream\" id=\"contact\">\n    <div class=\"container\">\n      <h2 class=\"section-title\">Contact Us</h2>\n      <p class=\"section-subtitle\">Visit us or get in touch</p>\n      <div class=\"contact-grid\">\n        <div class=\"contact-info reveal\">\n          <h3>Find Us</h3>\n          <address class=\"contact-address\">\n            5FQP+9PH, Manzoorabad Chowk,<br />\n            Mohalla Hazarian Wala,<br />\n            Multan, Pakistan\n          </address>\n          <div class=\"contact-links\">\n            <a href=\"tel:+923006330765\" class=\"contact-link\">\n              <span aria-hidden=\"true\">&#9742;&#65039;</span> +92 300 6330765\n            </a>\n            <a href=\"https://wa.me/923006330765\" class=\"contact-link\" target=\"_blank\" rel=\"noopener\">\n              <span aria-hidden=\"true\">&#128075;</span> WhatsApp Us\n            </a>\n          </div>\n        </div>\n        <div class=\"contact-map reveal\">\n          <iframe\n            src=\"https://www.google.com/maps?ll=30.1884361,71.4868656&z=17&output=embed\"\n            width=\"100%\"\n            height=\"350\"\n            allowfullscreen=\"\"\n            loading=\"lazy\"\n            referrerpolicy=\"no-referrer-when-downgrade\"\n            title=\"Bashir Ahmed Karahi Gosht location on Google Maps\"\n          ></iframe>\n        </div>\n      </div>\n      <div class=\"contact-form-wrapper reveal\">\n        <h3>Send a Message</h3>\n        <form class=\"contact-form\" id=\"contact-form\" action=\"https://formspree.io/f/your-form-id\" method=\"POST\">\n          <div class=\"form-group\">\n            <label for=\"name\">Name</label>\n            <input type=\"text\" id=\"name\" name=\"name\" required aria-required=\"true\" />\n          </div>\n          <div class=\"form-group\">\n            <label for=\"email\">Email</label>\n            <input type=\"email\" id=\"email\" name=\"email\" required aria-required=\"true\" />\n          </div>\n          <div class=\"form-group\">\n            <label for=\"message\">Message</label>\n            <textarea id=\"message\" name=\"message\" rows=\"5\" required aria-required=\"true\"></textarea>\n          </div>\n          <button type=\"submit\" class=\"btn btn-primary\">Send Message</button>\n          <p class=\"form-status\" aria-live=\"polite\"></p>\n        </form>\n      </div>\n    </div>\n  </section>\n\n  <!-- Footer -->\n  <footer class=\"footer\" role=\"contentinfo\">\n    <div class=\"container\">\n      <div class=\"footer-main\">\n        <div class=\"footer-contact\">\n          <h4>Bashir Ahmed Karahi Gosht</h4>\n          <address>\n            5FQP+9PH, Manzoorabad Chowk,<br />\n            Mohalla Hazarian Wala,<br />\n            Multan, Pakistan\n          </address>\n          <div class=\"footer-links\">\n            <a href=\"tel:+923006330765\">&#128222; +92 300 6330765</a>\n            <a href=\"https://wa.me/923006330765\" target=\"_blank\" rel=\"noopener\">&#128172; WhatsApp</a>\n          </div>\n        </div>\n        <div class=\"footer-copyright\">\n          <p>&copy; 2025 Bashir Ahmed Karahi Gosht. All rights reserved.</p>\n        </div>\n        <div class=\"footer-smk\">\n          <p>Made by SMK Studio</p>\n          <a href=\"https://wa.me/923041184818\" class=\"btn btn-primary\" target=\"_blank\" rel=\"noopener\">Order Own Website</a>\n        </div>\n      </div>\n    </div>\n  </footer>\n\n  <!-- Lightbox Modal -->\n  <div class=\"lightbox\" id=\"lightbox\" role=\"dialog\" aria-modal=\"true\" aria-label=\"Image preview\" hidden>\n    <button class=\"lightbox-close\" aria-label=\"Close lightbox\">&times;</button>\n    <button class=\"lightbox-prev\" aria-label=\"Previous image\">&lt;</button>\n    <button class=\"lightbox-next\" aria-label=\"Next image\">&gt;</button>\n    <img class=\"lightbox-image\" src=\"\" alt=\"\" />\n    <p class=\"lightbox-caption\"></p>\n  </div>\n\n  <script src=\"script.js\"></script>\n</body>\n</html>","styles.css":"/* ===== Palette Variables ===== */\n:root {\n  --color-base: #FFFFFF;\n  --color-light-gray: #F5F5F5;\n  --color-warm-cream: #FFF8E7;\n  --color-accent: #D4A017;\n  --color-accent-dark: #b58a13;\n  --color-text: #222222;\n  --color-text-light: #555555;\n  --font-heading: 'Playfair Display', serif;\n  --font-body: 'Inter', sans-serif;\n  --spacing-unit: 8px;\n  --section-padding-vertical: 80px;\n  --section-padding-horizontal: 24px;\n  --card-gap: 24px;\n  --transition-speed: 0.3s;\n  --transition-slow: 0.6s;\n}\n\n/* ===== Base Reset ===== */\n*, *::before, *::after {\n  box-sizing: border-box;\n  margin: 0;\n  padding: 0;\n}\n\nhtml {\n  scroll-behavior: smooth;\n}\n\nbody {\n  font-family: var(--font-body);\n  font-size: 16px;\n  line-height: 1.6;\n  color: var(--color-text);\n  background-color: var(--color-base);\n  overflow-x: hidden;\n}\n\nimg, video {\n  max-width: 100%;\n  display: block;\n}\n\na {\n  text-decoration: none;\n  color: inherit;\n}\n\nul {\n  list-style: none;\n}\n\nbutton, input, textarea {\n  font-family: inherit;\n  font-size: 16px;\n}\n\n.container {\n  width: min(90%, 1200px);\n  margin-inline: auto;\n  padding-inline: var(--section-padding-horizontal);\n}\n\n/* ===== Typography ===== */\n.section-title {\n  font-family: var(--font-heading);\n  font-size: 48px;\n  text-align: center;\n  margin-bottom: 16px;\n  font-weight: 600;\n}\n\n.section-subtitle {\n  font-family: var(--font-body);\n  font-size: 16px;\n  text-align: center;\n  margin-bottom: 40px;\n  color: var(--color-text-light);\n}\n\nh1, h2, h3, h4 {\n  font-family: var(--font-heading);\n  font-weight: 600;\n  color: var(--color-text);\n}\n\np, li {\n  font-family: var(--font-body);\n}\n\n/* ===== Spacing ===== */\n.section {\n  padding-block: var(--section-padding-vertical);\n  padding-inline: var(--section-padding-horizontal);\n  width: 100%;\n}\n\n.container {\n  padding-inline: var(--section-padding-horizontal);\n}\n\n.section-title {\n  font-size: 48px;\n  margin-bottom: 16px;\n}\n\n.section-subtitle {\n  font-size: 16px;\n  margin-bottom: 40px;\n}\n\n/* ===== Background Classes ===== */\n.bg-light-gray {\n  background-color: var(--color-light-gray);\n}\n\nbg-warm-cream {\n  background-color: var(--color-warm-cream);\n}\n\n/* ===== Navbar ===== */\n.navbar {\n  position: fixed;\n  top: 0;\n  left: 0;\n  width: 100%;\n  z-index: 1000;\n  background-color: rgba(255, 255, 255, 0.95);\n  backdrop-filter: blur(8px);\n  border-bottom: 1px solid #eaeaea;\n  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.05);\n  transition: box-shadow var(--transition-speed);\n}\n\n.nav-container {\n  display: flex;\n  align-items: center;\n  justify-content: space-between;\n  padding: 16px 0;\n}\n\n.logo {\n  font-family: var(--font-heading);\n  font-size: 24px;\nn  font-weight: 700;\n  color: var(--color-accent);\n  transition: color var(--transition-speed);\n}\n\n.nav-links ul {\n  display: flex;\n  gap: 24px;\n}\n\n.nav-link {\n  font-family: var(--font-body);\n  font-size: 16px;\n  font-weight: 500;\n  color: var(--color-text);\n  padding: 6px 0;\n  position: relative;\n  transition: color var(--transition-speed);\n}\n\n.nav-link:hover,\n.nav-link.active {\n  color: var(--color-accent);\n}\n\n.nav-link.active::after,\n.nav-link:hover::after {\n  content: '';\n  position: absolute;\n  bottom: -4px;\n  left: 0;\n  width: 100%;\n  height: 2px;\n  background-color: var(--color-accent);\n}\n\n.nav-toggle {\n  display: none;\n  background: none;\n  border: none;\n  font-size: 26px;\n  cursor: pointer;\n  color: var(--color-text);\n  transition: color var(--transition-speed);\n}\n\n.nav-toggle:hover {\n  color: var(--color-accent);\n}\n\n/* ===== Hero Section ===== */\n.hero {\n  position: relative;\n  min-height: 100vh;\n  background-image: linear-gradient(rgba(0, 0, 0, 0.35), rgba(0, 0, 0, 0.45)), url('https://images.unsplash.com/photo-1594212043659-5d8ec0b5eeb3?ixlib=rb-4.0.3&auto=format&fit=crop&w=2100&q=80');\n  background-size: cover;\n  background-position: center;\n  background-attachment: center;\n  display: flex;\n  align-items: center;\n  color: var(--color-base);\n  text-align: center;\n  padding-top: 80px;\n}\n\n.hero-overlay {\n  width: 100%;\n}\n\n.hero-content {\n  max-width: 800px;\n  margin-inline: auto;\n}\n\n.hero-title {\n  font-family: var(--font-heading);\n  font-size: 48px;\n  font-weight: 700;\n  color: var(--color-base);\n  text-shadow: 0 2px 8px rgba(0, 0, 0, 0.4);\n  margin-bottom: 16px;\n}\n\n.hero-tagline {\n  font-family: var(--font-body);\nn  font-size: 20px;\n  font-weight: 400;\n  color: #f0f0f0;\n  margin-bottom: 32px;\n  text-shadow: 0 1px 4px rgba(0, 0, 0, 0.3);\n}\n\n.hero-ctas {\n  display: flex;\n  justify-content: center;\n  gap: 20px;\n  flex-wrap: wrap;\n}\n\n.btn {\n  display: inline-flex;\n  align-items: center;\n  justify-content: center;\n  font-family: var(--font-body);\n  font-size: 16px;\n  font-weight: 600;\n  padding: 14px 28px;\n  border-radius: 8px;\n  border: none;\n  cursor: pointer;\n  transition: background-color var(--transition-slow), transform var(--transition-speed), box-shadow var(--transition-speed), scale var(--transition-speed);\n  transform: translateZ(0);\n}\n\n.btn:focus {\n  outline: 2px solid var(--color-accent);\n  outline-offset: 2px;\n}\n\n.btn-primary {\n  background-color: var(--color-accent);\n  color: var(--color-base);\n}\n\n.btn-primary:hover {\n  background-color: var(--color-accent-dark);\n  transform: scale(1.05);\n  box-shadow: 0 6px 16px rgba(212, 160, 23, 0.4);\n}\n\n.btn-outline {\n  background-color: transparent;\n  border: 2px solid var(--color-accent);\n  color: var(--color-accent);\n}\n\n.btn-outline:hover {\n  background-color: var(--color-accent);\n  color: #1a1a1a;\n  transform: scale(1.05);\n  box-shadow: 0 6px 16px rgba(212, 160, 23, 0.3);\n}\n\n/* ===== About Section ===== */\n.about-content {\n  max-width: 800px;\n  margin: 0 auto;\n  text-align: center;\n}\n\n.about-content p {\n  margin-bottom: 16px;\n  font-size: 18px;\n}\n\n.highlights {\n  display: grid;\n  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));\n  gap: 16px;\n  margin-top: 32px;\nn  text-align: left;\n}\n\n.highlights li {\n  padding: 16px 20px;\n  background: var(--color-base);\n  border-radius: 8px;\n  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);\n  transition: transform var(--transition-speed), box-shadow var(--transition-speed);\n}\n\n.highlights li:hover {\n  transform: translateY(-4px);\nn  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.1);\n}\n\n/* ===== Menu Accordion ===== */\n.menu-accordion {\n  max-width: 800px;\nn  margin: 0 auto;\n}\n\n.menu-category {\n  border: 1px solid #e0e0e0;\n  border-radius: 12px;\n  overflow: hidden;\n  margin-bottom: 16px;\n  background: var(--color-base);\n  transition: box-shadow var(--transition-speed), transform var(--transition-speed);\n}\n\n.menu-category:hover {\n  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.08);\nn  transform: translateY(-2px);\n}\n\n.menu-category-header {\n  width: 100%;\n  display: flex;\n  justify-content: space-between;\n  align-items: center;\n  padding: 20px 24px;\n  background: transparent;\n  border: none;\n  font-family: var(--font-heading);\nn  font-size: 22px;\n  font-weight: 600;\n  color: var(--color-text);\n  cursor: pointer;\n  text-align: left;\n  transition: background-color var(--transition-speed), color var(--transition-speed);\n}\n\n.menu-category-header:hover {\n  background: var(--color-warm-cream);\n}\n\n.accordion-icon {\n  font-size: 24px;\n  font-weight: 300;\n  color: var(--color-accent);\n  transition: transform var(--transition-speed);\n}\n\n.menu-category-header[aria-expanded=\"true\"] .accordion-icon {\n  transform: rotate(45deg);\n}\n\n.menu-category-panel {\n  overflow: hidden;\n  max-height: 0;\n  transition: max-height 0.4s ease;\n}\n\n.menu-category-panel:not([hidden]) {\n  max-height: 500px;\n}\n\n.menu-items {\n  padding: 0 24px 24px;\n}\n\n.menu-item {\n  display: flex;\n  justify-content: space-between;\n  align-items: flex-start;\n  padding: 16px 0;\n  border-bottom: 1px solid #f0f0f0;\n  gap: 16px;\n  transition: transform var(--transition-speed), box-shadow var(--transition-speed);\n}\n\n.menu-item:hover {\n  transform: translateY(-4px);\nn  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.08);\n}\n\n.menu-item:last-child {\n  border-bottom: none;\n}\n\n.menu-item-image {\n  width: 80px;\n  height: 80px;\n  object-fit: cover;\n  border-radius: 8px;\nn  flex-shrink: 0;\n  transition: transform var(--transition-speed);\n}\n\n.menu-item:hover .menu-item-image {\n  transform: scale(1.05);\n}\n\n.menu-item-content {\n  flex: 1;\nn  min-width: 0;\n}\n\n.menu-item-content h3 {\n  font-family: var(--font-heading);\nn  font-size: 18px;\n  font-weight: 600;\n  color: var(--color-text);\nn  margin-bottom: 4px;\n}\n\n.menu-item-content p {\n  font-size: 14px;\nn  color: var(--color-text-light);\n}\n\n.menu-item-price {\n  font-family: var(--font-heading);\nn  font-size: 18px;\n  font-weight: 600;\n  color: var(--color-accent);\nn  white-space: nowrap;\nn  flex-shrink: 0;\n}\n\n/* ===== Gallery ===== */\n.gallery-grid {\n  display: grid;\nn  grid-template-columns: repeat(4, 1fr);\nn  gap: var(--card-gap);\n}\n\n.gallery-item {\nn  position: relative;\n  border-radius: 12px;\n  overflow: hidden;\n  cursor: zoom-in;\n  aspect-ratio: 4 / 3;\n  transition: transform var(--transition-speed), box-shadow var(--transition-speed);\n}\n\n.gallery-item:hover {\n  transform: scale(1.03);\nn  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.1);\n}\n\n.gallery-item img {\n  width: 100%;\nn  height: 100%;\nn  object-fit: cover;\nn  transition: transform var(--transition-speed);\n}\n\n.gallery-item:hover img {\n  transform: scale(1.05);\n}\n\n.gallery-caption {\n  position: absolute;\nn  bottom: 0;\nn  left: 0;\nn  right: 0;\nn  padding: 16px;\nn  background: linear-gradient(transparent, rgba(0,0,0,0.7));\nn  color: var(--color-base);\nn  font-weight: 500;\nn  font-size: 14px;\nn  border-radius: 0 0 12px 12px;\n}\n\n/* ===== Reviews Carousel ===== */\n.reviews-carousel {\n  max-width: 1000px;\nn  margin: 0 auto;\nn  position: relative;\n}\n\n.reviews-track {\n  display: flex;\nn  gap: 24px;\nn  overflow-x: auto;\nn  scroll-snap-type: x mandatory;\nn  padding: 16px 8px;\nn  scrollbar-width: thin;\nn  scrollbar-color: var(--color-accent) transparent;\n}\n\n.reviews-track::-webkit-scrollbar {\n  height: 6px;\n}\n\n.reviews-track::-webkit-scrollbar-track {\n  background: transparent;\n}\n\n.reviews-track::-webkit-scrollbar-thumb {\n  background: var(--color-accent);\n  border-radius: 3px;\n}\n\n.review-card {\n  flex: 0 0 calc(33.333% - 16px);\n  min-width: 280px;\n  scroll-snap-align: start;\n  background: var(--color-base);\n  border-radius: 12px;\n  padding: 24px;\n  box-shadow: 0 2px 12px rgba(0, 0, 0, 0.06);\n  transition: transform var(--transition-speed), box-shadow var(--transition-speed);\n}\n\n.review-card:hover {\n  transform: translateY(-4px);\nn  box-shadow: 0 12px 32px rgba(0, 0, 0, 0.1);\n}\n\n.review-header {\n  display: flex;\n  align-items: center;\nn  gap: 16px;\nn  margin-bottom: 8px;\n}\n\n.review-avatar {\n  width: 48px;\nn  height: 48px;\n  border-radius: 50%;\nn  background: var(--color-accent);\nn  color: var(--color-base);\nn  display: flex;\nn  align-items: center;\nn  justify-content: center;\nn  font-weight: 600;\nn  font-size: 16px;\nn  flex-shrink: 0;\nn  transition: transform var(--transition-speed);\n}\n\n.review-header:hover .review-avatar {\n  transform: scale(1.1);\n}\n\n.review-meta h4 {\n  font-family: var(--font-heading);\nn  font-size: 16px;\nn  font-weight: 600;\nn  margin-bottom: 2px;\n}\n\n.review-stars {\n  font-size: 14px;\nn  color: var(--color-accent);\n}\n\n.review-date {\n  font-size: 13px;\nn  color: var(--color-text-light);\nn  margin-bottom: 4px;\n}\n\n.review-source {\n  font-size: 13px;\nn  color: var(--color-text-light);\nn  margin-bottom: 12px;\n}\n\n.review-quote {\n  font-size: 15
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Bashir Ahmed Karahi Gosht</title>
+  <link rel="stylesheet" href="styles.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Playfair+Display:wght@400;600;700&display=swap" rel="stylesheet" />
+</head>
+<body>
+  <!-- Sticky Navigation Bar -->
+  <header class="navbar" role="banner">
+    <div class="nav-container container">
+      <a href="#home" class="logo" aria-label="Bashir Ahmed Karahi Gosht - Home">Bashir Ahmed Karahi Gosht</a>
+      <nav class="nav-links" id="nav-links" role="navigation" aria-label="Main navigation">
+        <ul>
+          <li><a href="#home" class="nav-link" data-target="home">Home</a></li>
+          <li><a href="#about" class="nav-link" data-target="about">About</a></li>
+          <li><a href="#menu" class="nav-link" data-target="menu">Menu</a></li>
+          <li><a href="#gallery" class="nav-link" data-target="gallery">Gallery</a></li>
+          <li><a href="#reviews" class="nav-link" data-target="reviews">Reviews</a></li>
+          <li><a href="#contact" class="nav-link" data-target="contact">Contact</a></li>
+        </ul>
+      </nav>
+      <button class="nav-toggle" id="nav-toggle" aria-expanded="false" aria-controls="nav-links" aria-label="Toggle navigation menu">&#9776;</button>
+    </div>
+  </header>
+
+  <!-- Hero Section -->
+  <section class="hero" id="home">
+    <div class="hero-overlay">
+      <div class="hero-content">
+        <h1 class="hero-title">Bashir Ahmed Karahi Gosht</h1>
+        <p class="hero-tagline">Authentic Punjabi Desi Chicken &amp; Karahi Specialties</p>
+        <div class="hero-ctas">
+          <a href="#menu" class="btn btn-outline scroll-link">View Menu</a>
+          <a href="https://wa.me/923006330765" class="btn btn-primary" target="_blank" rel="noopener">Order on WhatsApp</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- About Section -->
+  <section class="section bg-warm-cream" id="about">
+    <div class="container">
+      <h2 class="section-title">Welcome</h2>
+      <p class="section-subtitle">Serving authentic Punjabi flavors since 1998</p>
+      <div class="about-content reveal">
+        <p>Experience the true taste of Punjab with our signature Desi Chicken Karahi, slow-cooked in pure desi ghee with aromatic spices.</p>
+        <p>Located in the heart of Multan, we offer a warm family atmosphere with separate seating areas and ample parking.</p>
+        <ul class="highlights">
+          <li><strong>Authentic Taste</strong> — Traditional recipes passed down through generations</li>
+          <li><strong>Reasonable Prices</strong> — Quality desi food at affordable rates</li>
+          <li><strong>Separate Seating</strong> — Dedicated family and gents sections</li>
+          <li><strong>Parking Available</strong> — Convenient parking space for customers</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- Menu Section -->
+  <section class="section bg-light-gray" id="menu">
+    <div class="container">
+      <h2 class="section-title">Our Menu</h2>
+      <p class="section-subtitle">Explore our Karahi, BBQ, Specialties &amp; Retail offerings</p>
+      <div class="menu-accordion">
+        <!-- Karahi Category -->
+        <div class="menu-category reveal">
+          <button class="menu-category-header" aria-expanded="false" aria-controls="karahi-panel">
+            <span>Karahi</span>
+            <span class="accordion-icon">+</span>
+          </button>
+          <div class="menu-category-panel" id="karahi-panel" role="region" hidden>
+            <div class="menu-items">
+              <article class="menu-item">
+                <img class="menu-item-image" src="https://images.unsplash.com/photo-1594212043659-5d8ec0b5eeb3?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80" alt="Desi Murgh Karahi" loading="lazy" />
+                <div class="menu-item-content">
+                  <h3>Desi Murgh Karahi</h3>
+                  <p>Free-range chicken cooked in pure desi ghee with tomatoes, ginger, garlic &amp; green chilies</p>
+                </div>
+                <span class="menu-item-price">PKR 1,200</span>
+              </article>
+              <article class="menu-item">
+                <img class="menu-item-image" src="https://images.unsplash.com/photo-1565557623262-b51c2513a641?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80" alt="Desi Chicken Karachi Fried" loading="lazy" />
+                <div class="menu-item-content">
+                  <h3>Desi Chicken Karachi Fried</h3>
+                  <p>Crispy fried desi chicken in desi ghee — our signature dish</p>
+                </div>
+                <span class="menu-item-price">PKR 1,350</span>
+              </article>
+              <article class="menu-item">
+                <img class="menu-item-image" src="https://images.unsplash.com/photo-1601050690597-df0568f70950?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80" alt="Mutton Karahi" loading="lazy" />
+                <div class="menu-item-content">
+                  <h3>Mutton Karahi</h3>
+                  <p>Tender mutton pieces slow-cooked with aromatic spices in desi ghee</p>
+                </div>
+                <span class="menu-item-price">PKR 1,800</span>
+              </article>
+            </div>
+          </div>
+        </div>
+        <!-- BBQ Category -->
+        <div class="menu-category reveal">
+          <button class="menu-category-header" aria-expanded="false" aria-controls="bbq-panel">
+            <span>BBQ</span>
+            <span class="accordion-icon">+</span>
+          </button>
+          <div class="menu-category-panel" id="bbq-panel" role="region" hidden>
+            <div class="menu-items">
+              <article class="menu-item">
+                <img class="menu-item-image" src="https://images.unsplash.com/photo-1603894584373-5ac82b2ae398?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80" alt="Chicken Tikka" loading="lazy" />
+                <div class="menu-item-content">
+                  <h3>Chicken Tikka</h3>
+                  <p>Marinated chicken chunks grilled over charcoal</p>
+                </div>
+                <span class="menu-item-price">PKR 650</span>
+              </article>
+              <article class="menu-item">
+                <img class="menu-item-image" src="https://images.unsplash.com/photo-1599487488170-d11ec9c172f0?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80" alt="Seekh Kabab" loading="lazy" />
+                <div class="menu-item-content">
+                  <h3>Seekh Kabab</h3>
+                  <p>Minced mutton with spices, grilled on skewers</p>
+                </div>
+                <span class="menu-item-price">PKR 750</span>
+              </article>
+              <article class="menu-item">
+                <img class="menu-item-image" src="https://images.unsplash.com/photo-1594212043659-5d8ec0b5eeb3?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80" alt="Malai Boti" loading="lazy" />
+                <div class="menu-item-content">
+                  <h3>Malai Boti</h3>
+                  <p>Creamy marinated chicken grilled to perfection</p>
+                </div>
+                <span class="menu-item-price">PKR 700</span>
+              </article>
+            </div>
+          </div>
+        </div>
+        <!-- Specialties Category -->
+        <div class="menu-category reveal">
+          <button class="menu-category-header" aria-expanded="false" aria-controls="specialties-panel">
+            <span>Specialties</span>
+            <span class="accordion-icon">+</span>
+          </button>
+          <div class="menu-category-panel" id="specialties-panel" role="region" hidden>
+            <div class="menu-items">
+              <article class="menu-item">
+                <img class="menu-item-image" src="https://images.unsplash.com/photo-1601050690597-df0568f70950?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80" alt="Handi Gosht" loading="lazy" />
+                <div class="menu-item-content">
+                  <h3>Handi Gosht</h3>
+                  <p>Slow-cooked mutton in clay pot with whole spices</p>
+                </div>
+                <span class="menu-item-price">PKR 1,600</span>
+              </article>
+              <article class="menu-item">
+                <img class="menu-item-image" src="https://images.unsplash.com/photo-1565557623262-b51c2513a641?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80" alt="Nihari" loading="lazy" />
+                <div class="menu-item-content">
+                  <h3>Nihari</h3>
+                  <p>Traditional slow-cooked beef stew, served with naan</p>
+                </div>
+                <span class="menu-item-price">PKR 550</span>
+              </article>
+              <article class="menu-item">
+                <img class="menu-item-image" src="https://images.unsplash.com/photo-1594212043659-5d8ec0b5eeb3?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80" alt="Paye" loading="lazy" />
+                <div class="menu-item-content">
+                  <h3>Paye</h3>
+                  <p>Gelatinous goat trotters cooked overnight</p>
+                </div>
+                <span class="menu-item-price">PKR 450</span>
+              </article>
+            </div>
+          </div>
+        </div>
+        <!-- Retail Category -->
+        <div class="menu-category reveal">
+          <button class="menu-category-header" aria-expanded="false" aria-controls="retail-panel">
+            <span>Retail</span>
+            <span class="accordion-icon">+</span>
+          </button>
+          <div class="menu-category-panel" id="retail-panel" role="region" hidden>
+            <div class="menu-items">
+              <article class="menu-item">
+                <img class="menu-item-image" src="https://images.unsplash.com/photo-1594212043659-5d8ec0b5eeb3?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80" alt="Bed Sheets &amp; Blankets" loading="lazy" />
+                <div class="menu-item-content">
+                  <h3>Bed Sheets &amp; Blankets</h3>
+                  <p>Premium quality cotton and wool blends</p>
+                </div>
+                <span class="menu-item-price">PKR 2,500+</span>
+              </article>
+              <article class="menu-item">
+                <img class="menu-item-image" src="https://images.unsplash.com/photo-1603894584373-5ac82b2ae398?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80" alt="Gents &amp; Ladies Suits" loading="lazy" />
+                <div class="menu-item-content">
+                  <h3>Gents &amp; Ladies Suits</h3>
+                  <p>Unstitched fabric suits for all occasions</p>
+                </div>
+                <span class="menu-item-price">PKR 3,000+</span>
+              </article>
+              <article class="menu-item">
+                <img class="menu-item-image" src="https://images.unsplash.com/photo-1565557623262-b51c2513a641?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80" alt="Shawls" loading="lazy" />
+                <div class="menu-item-content">
+                  <h3>Shawls</h3>
+                  <p>Warm woolen and pashmina shawls</p>
+                </div>
+                <span class="menu-item-price">PKR 1,800+</span>
+              </article>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Gallery Section -->
+  <section class="section bg-warm-cream" id="gallery">
+    <div class="container">
+      <h2 class="section-title">Gallery</h2>
+      <p class="section-subtitle">A glimpse into our restaurant and dishes</p>
+      <div class="gallery-grid" role="list">
+        <figure class="gallery-item reveal" role="listitem">
+          <img src="https://images.unsplash.com/photo-1594212043659-5d8ec0b5eeb3?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Restaurant exterior" loading="lazy" />
+          <figcaption class="gallery-caption">Restaurant Exterior</figcaption>
+        </figure>
+        <figure class="gallery-item reveal" role="listitem">
+          <img src="https://images.unsplash.com/photo-1603894584373-5ac82b2ae398?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Desi Murgh Karahi" loading="lazy" />
+          <figcaption class="gallery-caption">Desi Murgh Karahi</figcaption>
+        </figure>
+        <figure class="gallery-item reveal" role="listitem">
+          <img src="https://images.unsplash.com/photo-1565557623262-b51c2513a641?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Chicken Tikka BBQ" loading="lazy" />
+          <figcaption class="gallery-caption">Chicken Tikka BBQ</figcaption>
+        </figure>
+        <figure class="gallery-item reveal" role="listitem">
+          <img src="https://images.unsplash.com/photo-1594212043659-5d8ec0b5eeb3?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Family seating area" loading="lazy" />
+          <figcaption class="gallery-caption">Family Seating</figcaption>
+        </figure>
+        <figure class="gallery-item reveal" role="listitem">
+          <img src="https://images.unsplash.com/photo-1601050690597-df0568f70950?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Mutton Karahi" loading="lazy" />
+          <figcaption class="gallery-caption">Mutton Karahi</figcaption>
+        </figure>
+        <figure class="gallery-item reveal" role="listitem">
+          <img src="https://images.unsplash.com/photo-1546069901-ba9599a7e63c?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Naan and sides" loading="lazy" />
+          <figcaption class="gallery-caption">Fresh Naan &amp; Sides</figcaption>
+        </figure>
+      </div>
+    </div>
+  </section>
+
+  <!-- Reviews Section -->
+  <section class="section bg-light-gray" id="reviews">
+    <div class="container">
+      <h2 class="section-title">Customer Reviews</h2>
+      <p class="section-subtitle">What our guests say about us</p>
+      <div class="reviews-carousel" role="region" aria-label="Customer reviews">
+        <div class="reviews-track">
+          <article class="review-card reveal">
+            <div class="review-header">
+              <div class="review-avatar" aria-hidden="true">UG</div>
+              <div class="review-meta">
+                <h4>Dr. Usman Gul Khan</h4>
+                <div class="review-stars" aria-label="5 out of 5 stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+              </div>
+            </div>
+            <p class="review-date">7 months ago</p>
+            <p class="review-source">Local Guide &middot; 117 reviews &middot; 4,385 photos</p>
+            <blockquote class="review-quote">“Very good in taste but sitting is compromised but still good separate sitting spaces for gents and females. Taste is so good…”</blockquote>
+          </article>
+          <article class="review-card reveal">
+            <div class="review-header">
+              <div class="review-avatar" aria-hidden="true">UI</div>
+              <div class="review-meta">
+                <h4>Umer Irshad</h4>
+                <div class="review-stars" aria-label="5 out of 5 stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+              </div>
+            </div>
+            <p class="review-date">a year ago</p>
+            <p class="review-source">Local Guide &middot; 26 reviews &middot; 3 photos</p>
+            <blockquote class="review-quote">“It has the best desi food not of Multan but probably the best of Punjab. I will heavily recommend Desi Chicken Karachi fried with desi Ghee. Finger liking taste and good customer care. They can work on their seating and atmosphere but yet it is the best for Desi food lovers and appropriate for the family dinner.”</blockquote>
+          </article>
+          <article class="review-card reveal">
+            <div class="review-header">
+              <div class="review-avatar" aria-hidden="true">MK</div>
+              <div class="review-meta">
+                <h4>Muhammad Kamran</h4>
+                <div class="review-stars" aria-label="4 out of 5 stars">&#9733;&#9733;&#9733;&#9733;&#9734;</div>
+              </div>
+            </div>
+            <p class="review-date">4 years ago</p>
+            <p class="review-source">Local Guide &middot; 414 reviews &middot; 2,897 photos</p>
+            <blockquote class="review-quote">“Tried their Desi Murgh Karahi It's good in taste. Rooftop sitting is excellent but not for families”</blockquote>
+          </article>
+          <article class="review-card reveal">
+            <div class="review-header">
+              <div class="review-avatar" aria-hidden="true">HR</div>
+              <div class="review-meta">
+                <h4>Hamid Ali Raza</h4>
+                <div class="review-stars" aria-label="5 out of 5 stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+              </div>
+            </div>
+            <p class="review-date">8 years ago</p>
+            <p class="review-source">Local Guide &middot; 33 reviews &middot; 73 photos</p>
+            <blockquote class="review-quote">“Awesome experience of most authentic BBQ and Karahi options. Food quality is amazing. Prices are reasonable. Fairly decent sitting arrangements; not very upscale but still reasonable. Parking space is also sufficient.”</blockquote>
+          </article>
+          <article class="review-card reveal">
+            <div class="review-header">
+              <div class="review-avatar" aria-hidden="true">MH</div>
+              <div class="review-meta">
+                <h4>M Hamza</h4>
+                <div class="review-stars" aria-label="5 out of 5 stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+              </div>
+            </div>
+            <p class="review-date">a year ago</p>
+            <p class="review-source">6 reviews &middot; 6 photos</p>
+            <blockquote class="review-quote">“It's nice place for shoping bed sheet blankets jents ladies suits ladies shall evry thing avail here”</blockquote>
+          </article>
+        </div>
+        <div class="carousel-controls">
+          <button class="carousel-btn prev" aria-label="Previous review">&lt;</button>
+          <button class="carousel-btn next" aria-label="Next review">&gt;</button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section class="section bg-warm-cream" id="contact">
+    <div class="container">
+      <h2 class="section-title">Contact Us</h2>
+      <p class="section-subtitle">Visit us or get in touch</p>
+      <div class="contact-grid">
+        <div class="contact-info reveal">
+          <h3>Find Us</h3>
+          <address class="contact-address">
+            5FQP+9PH, Manzoorabad Chowk,<br />
+            Mohalla Hazarian Wala,<br />
+            Multan, Pakistan
+          </address>
+          <div class="contact-links">
+            <a href="tel:+923006330765" class="contact-link">
+              <span aria-hidden="true">&#9742;&#65039;</span> +92 300 6330765
+            </a>
+            <a href="https://wa.me/923006330765" class="contact-link" target="_blank" rel="noopener">
+              <span aria-hidden="true">&#128075;</span> WhatsApp Us
+            </a>
+          </div>
+        </div>
+        <div class="contact-map reveal">
+          <iframe
+            src="https://www.google.com/maps?ll=30.1884361,71.4868656&z=17&output=embed"
+            width="100%"
+            height="350"
+            allowfullscreen=""
+            loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"
+            title="Bashir Ahmed Karahi Gosht location on Google Maps"
+          ></iframe>
+        </div>
+      </div>
+      <div class="contact-form-wrapper reveal">
+        <h3>Send a Message</h3>
+        <form class="contact-form" id="contact-form" action="https://formspree.io/f/your-form-id" method="POST">
+          <div class="form-group">
+            <label for="name">Name</label>
+            <input type="text" id="name" name="name" required aria-required="true" />
+          </div>
+          <div class="form-group">
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email" required aria-required="true" />
+          </div>
+          <div class="form-group">
+            <label for="message">Message</label>
+            <textarea id="message" name="message" rows="5" required aria-required="true"></textarea>
+          </div>
+          <button type="submit" class="btn btn-primary">Send Message</button>
+          <p class="form-status" aria-live="polite"></p>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer" role="contentinfo">
+    <div class="container">
+      <div class="footer-main">
+        <div class="footer-contact">
+          <h4>Bashir Ahmed Karahi Gosht</h4>
+          <address>
+            5FQP+9PH, Manzoorabad Chowk,<br />
+            Mohalla Hazarian Wala,<br />
+            Multan, Pakistan
+          </address>
+          <div class="footer-links">
+            <a href="tel:+923006330765">&#128222; +92 300 6330765</a>
+            <a href="https://wa.me/923006330765" target="_blank" rel="noopener">&#128172; WhatsApp</a>
+          </div>
+        </div>
+        <div class="footer-copyright">
+          <p>&copy; 2025 Bashir Ahmed Karahi Gosht. All rights reserved.</p>
+        </div>
+        <div class="footer-smk">
+          <p>Made by SMK Studio</p>
+          <a href="https://wa.me/923041184818" class="btn btn-primary" target="_blank" rel="noopener">Order Own Website</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Lightbox Modal -->
+  <div class="lightbox" id="lightbox" role="dialog" aria-modal="true" aria-label="Image preview" hidden>
+    <button class="lightbox-close" aria-label="Close lightbox">&times;</button>
+    <button class="lightbox-prev" aria-label="Previous image">&lt;</button>
+    <button class="lightbox-next" aria-label="Next image">&gt;</button>
+    <img class="lightbox-image" src="" alt="" />
+    <p class="lightbox-caption"></p>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
