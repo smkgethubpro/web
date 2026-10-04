@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Bashir Ahmed Karahi Gosht</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<nav class="navbar">
+  <div class="nav-container">
+    <a href="#hero" class="nav-logo">Bashir Ahmed Karahi Gosht</a>
+    <button class="nav-toggle" aria-label="Toggle menu">
+      <span class="hamburger"></span>
+      <span class="hamburger"></span>
+      <span class="hamburger"></span>
+    </button>
+    <ul class="nav-menu">
+      <li><a href="#hero" class="nav-link">Home</a></li>
+      <li><a href="#about" class="nav-link">About</a></li>
+      <li><a href="#menu" class="nav-link">Menu</a></li>
+      <li><a href="#gallery" class="nav-link">Gallery</a></li>
+      <li><a href="#reviews" class="nav-link">Reviews</a></li>
+      <li><a href="#contact" class="nav-link">Contact</a></li>
+    </ul>
+  </div>
+</nav>
+<header class="hero" id="hero">
+  <div class="hero-overlay">
+    <h1 class="hero-title">Bashir Ahmed Karahi Gosht</h1>
+    <p class="hero-tagline">Authentic Punjabi Flavors in the Heart of Multan</p>
+    <div class="hero-buttons">
+      <a href="#menu" class="btn btn-primary">View Menu</a>
+      <a href="https://wa.me/923006330765" class="btn btn-secondary" target="_blank" rel="noopener">Order on WhatsApp</a>
+    </div>
+  </div>
+</header>
+<section id="about" class="about-section">
+  <div class="about-content">
+    <p class="about-description">
+      Authentic Punjabi cuisine crafted with traditional recipes and desi ghee.<br>
+      Experience the rich flavors of Multan in every bite.
+    </p>
+    <ul class="about-highlights">
+      <li>Authentic taste</li>
+      <li>Reasonable prices</li>
+      <li>Separate seating</li>
+      <li>Ample parking</li>
+    </ul>
+  </div>
+</section>
+<script src="script.js"></script>
+</body>
+</html>
