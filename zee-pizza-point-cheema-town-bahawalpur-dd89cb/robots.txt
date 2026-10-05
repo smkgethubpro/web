@@ -1,4 +1,0 @@
-User-agent: *
-Allow: /
-
-Sitemap: https://smkgethubpro.github.io/web/zee-pizza-point-cheema-town-bahawalpur-dd89cb/sitemap.xml
